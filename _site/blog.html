@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BoxIcons v2.1.2 -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>BLOG</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <div><img class="logo" src="assets/images/logo.png"></div>
+
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <!-- NAVIGATION MENUS -->
+
+                <div class="menu">
+                    <a href="index.html">HOME</a>
+                    <li><a href="#">MEET YOUR COACH</a></li>
+                    <li><a href="#">COACHING</a></li>
+                    <li><a href="#">FREE RESOURCES</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="category-menu">
+        <button class="category-button" onclick="filterPosts('all')">ALL</button>
+        <button class="category-button" onclick="filterPosts('coach')">COACH</button>
+        <button class="category-button" onclick="filterPosts('expat')">EXPAT</button>
+        <!-- ... más botones de categoría según sea necesario ... -->
+    </div>
+
+    <!-- Posts Container -->
+    <div class="posts-container">
+        
+        <a href="/coach/2023/11/10/welcome-to-jekyll.html" class="post-card all coach" style="text-decoration: none;">
+            
+            <h3>Welcome to Jekyll!</h3>
+            <p>You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when...</p>
+        </a>
+        
+        <a href="/2023/11/09/Post.html" class="post-card all " style="text-decoration: none;">
+            
+            <img src="/assets/images/mi-imagen-post.jpg" alt="El tedtulo de tu increedble post">
+            
+            <h3>El tedtulo de tu increedble post</h3>
+            <p>Este es un resumen de mi post que aparecere1 en la vista de tarjetas.</p>
+        </a>
+        
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

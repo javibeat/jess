@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat', Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    grid-template-columns: 150px auto 150px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    background-color: rgb(253, 194, 194);
+    padding: 0 30px 0;
+}
+
+.logo {
+    width: 300px;
+    padding: 12px 0 5px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 2em;
+    font-size: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+
+/* .social {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 0 15px;
+} */
+
+.bx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgb(163, 122, 39);
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+/* DROPDOWN MENU */
+
+.dropdown {
+    background-color: rgb(247, 244, 242);
+    padding: 1em 0;
+    position: absolute;
+    /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+
+/* CHECKBOX HACK */
+
+input[type=checkbox] {
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+
+/* APPLYING MEDIA QUERIES */
+
+@media (max-width: 1068px) {
+    .menu {
+        display: none;
+        position: absolute;
+        background-color: rgb(247, 244, 242);
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 25px 0;
+        margin-top: 5px;
+    }
+
+    .menu li+li {
+        margin-top: 12px;
+    }
+
+    input[type=checkbox]:checked~.menu {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+}
+
+/* RESPONSIVE MENU END */
+
+/* Section Styles */
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    /* Aligns children (divs) horizontally */
+    background-color: #e31616;
+    /* Main section background color */
+    padding: 20px;
+    /* Padding around the section */
+    box-sizing: border-box;
+    /* Ensures padding is included in total width/height */
+}
+
+.left-div,
+.right-div {
+    width: 50%;
+    /* Each div takes up half of the .main-section's width */
+    padding: 10px;
+    /* Padding inside the divs */
+    box-sizing: border-box;
+    /* Ensures padding is included in total width/height */
+}
+
+.left-div {
+    background-color: #ffffff00;
+    /* Left div background color */
+    text-align: center;
+    /* Centers the text horizontally in the div */
+}
+
+.right-div {
+    background-color: #ddd;
+    /* Right div background color */
+    text-align: center;
+    /* Centers the text horizontally in the div */
+}
+
+@media (max-width: 1068px) {
+    /* ... other styles ... */
+
+    .main-section {
+        flex-direction: column;
+        /* Stacks children (divs) vertically on small screens */
+    }
+
+    .left-div,
+    .right-div {
+        width: auto;
+        /* Allows divs to fill available space */
+    }
+}
+
+/* Estilos para el menú de categorías BLOG BLOG BLOG BLOG*/
+.category-menu {
+    text-align: center;
+    margin: 20px;
+}
+
+.category-button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    /* Añade estilos adicionales según sea necesario */
+}
+
+/* Estilos para las tarjetas de los posts */
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* Ajusta el espacio entre las tarjetas */
+    padding: 20px;
+    /* Ajusta el padding de todo el contenedor */
+}
+
+.post-card {
+    background-color: white;
+    /* Color de fondo de la tarjeta */
+    border-radius: 15px;
+    /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil para la tarjeta */
+    overflow: hidden;
+    /* Asegura que todo dentro de la tarjeta respete los bordes redondeados */
+    width: 300px;
+    /* Ancho fijo para cada tarjeta */
+    text-align: left;
+    /* Alineación del texto dentro de la tarjeta */
+    transition: transform 0.2s;
+    /* Transición suave para hover */
+}
+
+.post-card:hover {
+    transform: scale(1.05);
+    /* Efecto de crecimiento al pasar el mouse sobre la tarjeta */
+}
+
+.post-card img {
+    width: 100%;
+    /* La imagen cubre el ancho completo de la tarjeta */
+    height: auto;
+    /* La altura de la imagen es automática para mantener la proporción */
+}
+
+.post-card h3 {
+    margin: 16px;
+    /* Margen alrededor del título para dar espacio */
+}
+
+.post-card p {
+    margin: 0 16px 16px;
+    /* Margen alrededor del párrafo */
+    color: #333;
+    /* Color del texto */
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .posts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .post-card {
+        width: 90%;
+        /* Las tarjetas ocupan más ancho en pantallas pequeñas */
+    }
+}
