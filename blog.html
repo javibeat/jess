@@ -1,0 +1,77 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BoxIcons v2.1.2 -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>BLOG</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+
+            <div><img class="logo" src="assets/images/logo.png"></div>
+
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <!-- NAVIGATION MENUS -->
+
+                <div class="menu">
+                    <a href="index.html">HOME</a>
+                    <li><a href="#">MEET YOUR COACH</a></li>
+                    <li><a href="#">COACHING</a></li>
+                    <li><a href="#">FREE RESOURCES</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </ul>
+
+        </nav>
+    </header>
+
+    <div class="category-menu">
+        <button class="category-button" onclick="filterPosts('all')">ALL</button>
+        <button class="category-button" onclick="filterPosts('coach')">COACH</button>
+        <button class="category-button" onclick="filterPosts('expat')">EXPAT</button>
+        <!-- ... más botones de categoría según sea necesario ... -->
+    </div>
+
+    <!-- Posts Container -->
+    <div class="posts-container">
+        {% for post in site.posts %}
+        <a href="{{ post.url }}" class="post-card all {{ post.categories | first }}" style="text-decoration: none;">
+            {% if post.image %}
+            <img src="{{ post.image }}" alt="{{ post.title }}">
+            {% endif %}
+            <h3>{{ post.title }}</h3>
+            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+        </a>
+        {% endfor %}
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
