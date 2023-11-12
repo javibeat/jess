@@ -171,7 +171,8 @@ input[type=checkbox] {
 .right-div {
     background-color: #c6c6c6;
     /* Fondo blanco para el contenido de la derecha */
-    height: auto;
+    max-width: 500px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     margin: 30px;
@@ -191,7 +192,7 @@ input[type=checkbox] {
     }
 
     .right-div {
-        max-height: 300px;
+        max-height: 400px;
     }
 }
 
