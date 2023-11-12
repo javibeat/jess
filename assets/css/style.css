@@ -4,6 +4,15 @@
     font-family: 'montserrat', Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
 nav {
     display: flex;
     grid-template-columns: 150px auto 150px;
@@ -28,7 +37,6 @@ nav {
 }
 
 .menu a {
-    text-decoration: none;
     color: black;
 }
 
@@ -128,47 +136,79 @@ input[type=checkbox] {
 /* Section Styles */
 .main-section {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten según el ancho de pantalla */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
-    background-image: url("/assets/images/8.png");
-    background-position: center center; /* Centra la imagen de fondo horizontal y verticalmente */
-    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
-    background-size: cover; /* Cubre todo el espacio disponible, incluso si tiene que cortar un poco la imagen */
-    box-sizing: border-box;
-    min-height: 100vh; /* Asegura que la sección principal tenga la altura completa de la pantalla */
-    width: 100vw; /* Asegura que la sección principal tenga el ancho completo de la pantalla */
+    flex-direction: row;
+    /* Los elementos secundarios se colocan en una fila */
+    justify-content: center;
+    /* Centra los elementos secundarios en el eje principal */
+    align-items: center;
+    /* Centra los elementos secundarios en el eje cruzado */
+    background: url('/assets/images/8.png') center center / cover no-repeat fixed;
+    /* Ajustes para la imagen de fondo */
+    height: 100vh;
+    /* Altura total de la ventana de visualización */
+    width: 100vw;
+    /* Ancho total de la ventana de visualización */
 }
 
 .left-div,
 .right-div {
-    max-width: 50%; /* Máximo ancho de cada div */
-    flex-basis: 50%; /* Base del tamaño para el flex */
-    padding: 10px; /* Padding dentro de los divs */
-    box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho/altura total */
+    flex: 1;
+    /* Los divs tomarán el mismo espacio */
+    display: flex;
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    padding: 10px;
+    /* Espaciado interior para no tocar los bordes del div */
 }
 
 .left-div {
-    background-color: rgba(255, 255, 255, 0); /* Transparencia total */
-    text-align: center; /* Centra el texto horizontalmente en el div */
+    background-color: rgba(134, 77, 77, 0);
+    /* Transparente */
 }
 
 .right-div {
-    background-color: #ddd; /* Color de fondo del div derecho */
-    text-align: center; /* Centra el texto horizontalmente en el div */
+    background-color: #c6c6c6;
+    /* Fondo blanco para el contenido de la derecha */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 35px;
+    align-items: start;
+    border-radius: 20px;
 }
 
-@media (max-width: 768px) { /* Ajusta este valor según el punto de quiebre deseado para el diseño móvil */
+.texto {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
     .main-section {
-        flex-direction: column; /* Apila los hijos (divs) verticalmente en pantallas pequeñas */
+        flex-direction: column;
+        /* Los elementos secundarios se colocan en una columna */
     }
 
-    .left-div,
     .right-div {
-        max-width: 100%; /* Permite que los divs llenen el espacio disponible */
-        flex-basis: auto; /* El tamaño base para flex se ajusta automáticamente */
+        max-height: 300px;
     }
 }
+
+.formulario {
+    background-color: #ff2c2c;
+    margin: auto;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.formulario a {
+    color: rgb(255, 255, 255);
+}
+
 
 
 /* Estilos para el menú de categorías BLOG BLOG BLOG BLOG*/
