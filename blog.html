@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,32 +15,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}">
+
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <title>BLOG</title>
 </head>
 
 <body>
+
     <header>
         <nav class="navbar">
-            <div>
-                <img class="logo" src="{{ '/assets/images/logo.png' | prepend: site.baseurl }}">
-            </div>
+
+            <div><img class="logo" src="assets/images/logo.png"></div>
+
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
+
                 <!-- USING CHECKBOX HACK -->
                 <input type="checkbox" id="checkbox_toggle" />
                 <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
                 <!-- NAVIGATION MENUS -->
+
                 <div class="menu">
-                    <li><a href="{{ site.baseurl }}/">HOME</a></li>
-                    <li><a href="{{ site.baseurl }}/meet-your-coach.html">MEET YOUR COACH</a></li>
-                    <li><a href="{{ site.baseurl }}/coaching.html">COACHING</a></li>
-                    <li><a href="{{ site.baseurl }}/free-resources.html">FREE RESOURCES</a></li>
-                    <li><a href="{{ site.baseurl }}/blog.html">BLOG</a></li>
-                    <li><a href="{{ site.baseurl }}/contact.html">CONTACT</a></li>
+                    <a href="index.html">HOME</a>
+                    <li><a href="#">MEET YOUR COACH</a></li>
+                    <li><a href="#">COACHING</a></li>
+                    <li><a href="#">FREE RESOURCES</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <a href="contact.html">CONTACT</a>
                 </div>
             </ul>
+
         </nav>
     </header>
 
@@ -52,10 +60,9 @@
     <!-- Posts Container -->
     <div class="posts-container">
         {% for post in site.posts %}
-        <a href="{{ site.baseurl }}{{ post.url }}" class="post-card all {{ post.categories | first }}"
-            style="text-decoration: none;">
+        <a href="{{ post.url }}" class="post-card all {{ post.categories | first }}" style="text-decoration: none;">
             {% if post.image %}
-            <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}">
+            <img src="{{ post.image }}" alt="{{ post.title }}">
             {% endif %}
             <h3>{{ post.title }}</h3>
             <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
@@ -63,7 +70,8 @@
         {% endfor %}
     </div>
 
-    <script src="{{ '/assets/js/script.js' | prepend: site.baseurl }}"></script>
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
