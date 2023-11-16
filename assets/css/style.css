@@ -312,16 +312,16 @@ input[type=checkbox] {
 
 .me {
     display: flex;
-    flex-direction: row; /* Elementos secundarios en una fila para la versión de escritorio */
+    flex-direction: column; /* Elementos secundarios en una fila para la versión de escritorio */
     justify-content: center; /* Centra los elementos horizontalmente */
     align-items: center; /* Centra los elementos verticalmente */
     padding: 30px;
 }
 
-.meleft,
-.meright {
+.medivs {
     flex: 1; /* Los divs tomarán el mismo espacio */
     display: flex;
+    flex-direction: row;
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra el contenido verticalmente */
     padding: 10px; /* Espaciado interior */
