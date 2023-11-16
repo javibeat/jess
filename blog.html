@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +10,14 @@
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
 
     <!-- Montserrat Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}">
 
     <title>BLOG</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -49,7 +52,8 @@
     <!-- Posts Container -->
     <div class="posts-container">
         {% for post in site.posts %}
-        <a href="{{ site.baseurl }}{{ post.url }}" class="post-card all {{ post.categories | first }}" style="text-decoration: none;">
+        <a href="{{ site.baseurl }}{{ post.url }}" class="post-card all {{ post.categories | first }}"
+            style="text-decoration: none;">
             {% if post.image %}
             <img src="{{ site.baseurl }}{{ post.image }}" alt="{{ post.title }}">
             {% endif %}
@@ -61,4 +65,5 @@
 
     <script src="{{ '/assets/js/script.js' | prepend: site.baseurl }}"></script>
 </body>
+
 </html>
