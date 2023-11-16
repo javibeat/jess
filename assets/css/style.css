@@ -312,27 +312,25 @@ input[type=checkbox] {
 
 .me {
     display: flex;
-    flex-direction: column;
-    /* Los elementos secundarios se colocan en una fila */
-    justify-content: center;
-    /* Centra los elementos secundarios en el eje principal */
-    align-items: center;
-    /* Centra los elementos secundarios en el eje cruzado */
+    flex-direction: row; /* Elementos secundarios en una fila para la versión de escritorio */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
     padding: 30px;
 }
 
 .meleft,
 .meright {
-    flex: 1;
-    /* Los divs tomarán el mismo espacio */
+    flex: 1; /* Los divs tomarán el mismo espacio */
     display: flex;
-    flex: row;
-    justify-content: center;
-    /* Centra el contenido horizontalmente */
-    align-items: center;
-    /* Centra el contenido verticalmente */
-    padding: 10px;
-    /* Espaciado interior para no tocar los bordes del div */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    padding: 10px; /* Espaciado interior */
+}
+
+@media (max-width: 768px) {
+    .me {
+        flex-direction: column; /* Elementos secundarios en una columna para la versión móvil */
+    }
 }
 
 
