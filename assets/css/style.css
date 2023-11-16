@@ -289,3 +289,15 @@ input[type=checkbox] {
         /* Las tarjetas ocupan más ancho en pantallas pequeñas */
     }
 }
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro2 {
+    max-width: 800px;
+    text-align: justify;
+    margin: 10px 30px 10px 30px
+}
