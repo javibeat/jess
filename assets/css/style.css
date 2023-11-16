@@ -327,9 +327,22 @@ input[type=checkbox] {
     padding: 10px; /* Espaciado interior */
 }
 
+.meleft {
+    margin: 10px;
+}
+
+.meright {
+    margin: 25px;
+    text-align: justify;
+}
+
 @media (max-width: 768px) {
     .me {
         flex-direction: column; /* Elementos secundarios en una columna para la versión móvil */
+    }
+
+    .medivs {
+        flex-direction: column;
     }
 }
 
