@@ -13,44 +13,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- Ajustar la ruta de la hoja de estilos con baseurl -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | prepend: site.baseurl }}">
 
-    <link rel="stylesheet" href="/assets/css/style.css">
-
-    <title>POST</title>
+    <title>{{ page.title }}</title>
 </head>
 
 <body>
-
     <header>
         <nav class="navbar">
-
-            <div><img class="logo" src="assets/images/logo.png"></div>
-
+            <!-- Ajustar la ruta de las imágenes con baseurl -->
+            <div><img class="logo" src="{{ '/assets/images/logo.png' | prepend: site.baseurl }}"></div>
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
                 <!-- USING CHECKBOX HACK -->
                 <input type="checkbox" id="checkbox_toggle" />
                 <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
                 <!-- NAVIGATION MENUS -->
                 <div class="menu">
-                    <a href="index.html">HOME</a>
-                    <li><a href="#">MEET YOUR COACH</a></li>
-                    <li><a href="#">COACHING</a></li>
-                    <li><a href="#">FREE RESOURCES</a></li>
-                    <a href="blog.html">BLOG</a>
-                    <a href="contact.html">CONTACT</a>
+                    <!-- Ajustar los enlaces con baseurl -->
+                    <li><a href="{{ site.baseurl }}/">HOME</a></li>
+                    <li><a href="{{ site.baseurl }}/meet-your-coach.html">MEET YOUR COACH</a></li>
+                    <li><a href="{{ site.baseurl }}/coaching.html">COACHING</a></li>
+                    <li><a href="{{ site.baseurl }}/free-resources.html">FREE RESOURCES</a></li>
+                    <li><a href="{{ site.baseurl }}/blog.html">BLOG</a></li>
+                    <li><a href="{{ site.baseurl }}/contact.html">CONTACT</a></li>
                 </div>
             </ul>
         </nav>
     </header>
 
     <article class="post-content">
-        {{ content }} <!-- El contenido del post se insertará aquí -->
+        <!-- El contenido del post se insertará aquí -->
+        {{ content }}
     </article>
 
-    <script src="/assets/js/script.js"></script>
-
+    <!-- Ajustar la ruta del script con baseurl -->
+    <script src="{{ '/assets/js/script.js' | prepend: site.baseurl }}"></script>
 </body>
 
 </html>
