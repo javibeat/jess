@@ -346,4 +346,18 @@ input[type=checkbox] {
     }
 }
 
+.formulario2 {
+    background-color: #ad814b;
+    margin: 15px;
+    display: inline-block; /* Ajusta el ancho al del contenido y permite el uso de padding */
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
 
+.formulario2 a {
+    color: white; /* Asegura que los enlaces dentro de .formulario2 también sean blancos */
+    text-decoration: none; /* Opcional: elimina el subrayado del enlace */
+}
