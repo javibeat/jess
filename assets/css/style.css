@@ -204,7 +204,7 @@ input[type=checkbox] {
     height: auto;
     padding: 15px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .formulario a {
@@ -306,25 +306,30 @@ input[type=checkbox] {
     margin: 10px 30px 10px 30px;
 }
 
-@media (max-width: 768px) {
-    
-}
+@media (max-width: 768px) {}
 
 .me {
     display: flex;
-    flex-direction: column; /* Elementos secundarios en una fila para la versión de escritorio */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    align-items: center; /* Centra los elementos verticalmente */
+    flex-direction: column;
+    /* Elementos secundarios en una fila para la versión de escritorio */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
     padding: 30px;
 }
 
 .medivs {
-    flex: 1; /* Los divs tomarán el mismo espacio */
+    flex: 1;
+    /* Los divs tomarán el mismo espacio */
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    padding: 10px; /* Espaciado interior */
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    padding: 10px;
+    /* Espaciado interior */
 }
 
 .meleft {
@@ -338,7 +343,8 @@ input[type=checkbox] {
 
 @media (max-width: 768px) {
     .me {
-        flex-direction: column; /* Elementos secundarios en una columna para la versión móvil */
+        flex-direction: column;
+        /* Elementos secundarios en una columna para la versión móvil */
     }
 
     .medivs {
@@ -349,15 +355,87 @@ input[type=checkbox] {
 .formulario2 {
     background-color: #ad814b;
     margin: 15px;
-    display: inline-block; /* Ajusta el ancho al del contenido y permite el uso de padding */
+    display: inline-block;
+    /* Ajusta el ancho al del contenido y permite el uso de padding */
     padding: 15px;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
-    color: white;
 }
 
 .formulario2 a {
-    color: white; /* Asegura que los enlaces dentro de .formulario2 también sean blancos */
-    text-decoration: none; /* Opcional: elimina el subrayado del enlace */
+    color: white;
+    /* Asegura que los enlaces dentro de .formulario2 también sean blancos */
+    text-decoration: none;
+    /* Opcional: elimina el subrayado del enlace */
+}
+
+.mcentro {
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    /* Centra las tarjetas horizontalmente */
+    flex-wrap: wrap;
+    /* Permite que las tarjetas se ajusten en filas en pantallas más pequeñas */
+    gap: 10px;
+    /* Espacio entre tarjetas */
+}
+
+.card {
+    flex-basis: 30%;
+    /* Establece una base para el ancho de cada tarjeta */
+    text-align: center;
+    /* Centra el texto y el contenido de la tarjeta */
+    padding: 20px;
+    /* Espaciado interno */
+    border: 1px solid #ddd;
+    /* Borde ligero */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    margin: 10px;
+    /* Margen alrededor de las tarjetas */
+    display: flex;
+    flex-direction: column;
+    /* Organiza el contenido de la tarjeta verticalmente */
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+    align-items: center;
+    /* Alinea elementos horizontalmente al centro */
+}
+
+.icono {
+    font-size: 40px;
+    /* Tamaño del icono (ajustable) */
+    margin-bottom: 10px;
+    /* Espacio debajo del icono */
+}
+
+button {
+    margin-top: 10px;
+    /* Espacio encima del botón */
+    padding: 10px 20px;
+    /* Espaciado interno del botón */
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        flex-basis: 80%;
+        /* Hace las tarjetas más anchas en pantallas pequeñas */
+    }
+}
+
+h3 {
+    margin: 10px;
+    font-weight: 500;
 }
