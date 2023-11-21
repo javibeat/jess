@@ -320,7 +320,7 @@ input[type=checkbox] {
     /* Centra los elementos horizontalmente */
     align-items: center;
     /* Centra los elementos verticalmente */
-    padding: 30px;
+    padding: 150px 50px 150px 50px;
 }
 
 .medivs {
@@ -358,7 +358,7 @@ input[type=checkbox] {
 
 .formulario2 {
     background-color: #ad814b;
-    margin: 15px;
+    margin: 30px 15px;
     display: inline-block;
     /* Ajusta el ancho al del contenido y permite el uso de padding */
     padding: 15px;
@@ -380,7 +380,7 @@ input[type=checkbox] {
 
 .work {
     background-color: rgb(239, 239, 239);
-    padding: 30px;
+    padding: 150px 30px 150px 30px;
 }
 
 .cards-container {
@@ -394,27 +394,29 @@ input[type=checkbox] {
 }
 
 .card {
-    flex-basis: 30%;
-    /* Establece una base para el ancho de cada tarjeta */
-    text-align: center;
-    /* Centra el texto y el contenido de la tarjeta */
-    padding: 20px;
-    /* Espaciado interno */
-    border: 1px solid #ddd;
-    /* Borde ligero */
-    border-radius: 5px;
-    /* Bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Sombra ligera */
-    margin: 10px;
-    /* Margen alrededor de las tarjetas */
+    flex-basis: 30%; /* Establece una base para el ancho de cada tarjeta */
+    max-width: 300px; /* Ancho máximo para evitar que las tarjetas se deformen */
+    text-align: center; /* Centra el texto y el contenido de la tarjeta */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde ligero */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 10px; /* Margen alrededor de las tarjetas */
     display: flex;
-    flex-direction: column;
-    /* Organiza el contenido de la tarjeta verticalmente */
-    justify-content: center;
-    /* Centra el contenido verticalmente */
-    align-items: center;
-    /* Alinea elementos horizontalmente al centro */
+    flex-direction: column; /* Organiza el contenido de la tarjeta verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Alinea elementos horizontalmente al centro */
+    background: #fff; /* Fondo blanco para las tarjetas, si es necesario */
+}
+
+.separador{
+    border-bottom: 2px solid #333;
+    margin-top: 20px;
+}
+
+.texto {
+    margin: 25px;
+    text-align: justify;
 }
 
 .icono {
@@ -425,12 +427,12 @@ input[type=checkbox] {
 }
 
 button {
-    margin-top: 10px;
+    margin-bottom: 15px;
     /* Espacio encima del botón */
     padding: 10px 20px;
     /* Espaciado interno del botón */
     border: none;
-    background-color: #007bff;
+    background-color: #ad814b;
     color: white;
     border-radius: 5px;
     cursor: pointer;
