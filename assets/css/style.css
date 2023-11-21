@@ -141,86 +141,79 @@ input[type=checkbox] {
 /* Section Styles */
 .main-section {
     display: flex;
-    flex-direction: row;
-    /* Los elementos secundarios se colocan en una fila */
+    flex-direction: row; /* Alineación horizontal para pantallas grandes */
     justify-content: center;
-    /* Centra los elementos secundarios en el eje principal */
     align-items: center;
-    /* Centra los elementos secundarios en el eje cruzado */
-    background: url('/assets/images/jess.jpg') center center / cover no-repeat;
-    /* Ajustes para la imagen de fondo */
-    height: 100vh;
-    /* Altura total de la ventana de visualización */
-    width: 100vw;
-    /* Ancho total de la ventana de visualización */
+    background: url('/assets/images/jess.jpg') center center / cover no-repeat; /* Se mantiene */
+    height: 100vh; /* Se mantiene */
+    width: 100vw; /* Se mantiene */
+    flex-wrap: wrap; /* Permite envolver elementos en pantallas pequeñas */
 }
 
 .left-div,
 .right-div {
-    flex: 1;
-    /* Los divs tomarán el mismo espacio */
+    flex: 1; /* Permite que cada div tome la mitad del espacio disponible */
     display: flex;
     justify-content: center;
-    /* Centra el contenido horizontalmente */
     align-items: center;
-    /* Centra el contenido verticalmente */
-    padding: 10px;
-    /* Espaciado interior para no tocar los bordes del div */
+    padding: 10px; /* Se mantiene */
 }
 
 .left-div {
-    background-color: #c6c6c6;
-    max-width: 500px; /* Máximo ancho para dispositivos más grandes */
-    width: 100%; /* Ancho relativo para hacerlo responsivo */
-    height: auto; /* Altura automática para adaptarse al contenido */
+    background-color: #ffffff; /* Se mantiene */
+    max-width: 500px; /* Se mantiene */
+    width: 100%; /* Se mantiene */
+    height: auto; /* Se mantiene */
     display: flex;
     flex-direction: column;
-    margin: 30px; /* Centrado y margen automático para los lados */
-    padding: 35px;
-    align-items: start;
-    border-radius: 20px;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    margin: 30px; /* Se mantiene */
+    padding: 35px; /* Se mantiene */
+    align-items: start; /* Se mantiene */
+    border-radius: 20px; /* Se mantiene */
+    box-sizing: border-box; /* Se mantiene */
 }
 
 .right-div {
-    background-color: #c6c6c600;
-    
+    background-color: transparent; /* Se mantiene */
 }
 
 .texto {
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Se mantiene */
 }
 
 @media (max-width: 768px) {
     .main-section {
-        flex-direction: column;
-        /* Los elementos secundarios se colocan en una columna */
+        flex-direction: column; /* Alineación vertical para pantallas pequeñas */
     }
 
     .left-div {
-        height: 300px;
-        padding: 20px; /* Padding reducido para dispositivos móviles */
-        margin: 20px; /* Margen ajustado para dispositivos móviles */
+        padding: 10px;
     }
 
-    .right-div {
-        max-height: 400px;
+    .formulario {
+        margin: 10px auto; /* Centra el formulario en pantallas pequeñas */
+        padding: 15px; /* Ajusta el padding según sea necesario */
     }
 }
 
 .formulario {
-    background-color: #ff2c2c;
-    margin: 10px;
-    width: auto;
-    height: auto;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
+    background-color: #ff2c2c; /* Se mantiene */
+    width: auto; /* Se mantiene */
+    height: auto; /* Se mantiene */
+    padding: 15px; /* Se mantiene */
+    border-radius: 10px; /* Se mantiene */
+    font-size: 18px; /* Se mantiene */
+    text-align: center; /* Asegura que el texto esté centrado */
 }
 
 .formulario a {
-    color: rgb(255, 255, 255);
+    color: white; /* Se mantiene */
+    text-decoration: none; /* Se mantiene */
+    padding: 10px 20px; /* Se mantiene */
+    display: inline-block; /* Se mantiene */
+    border-radius: 5px; /* Se mantiene */
 }
+
 
 
 
@@ -308,7 +301,7 @@ input[type=checkbox] {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 150px 50px 150px 50px;
 }
 
 .intro2 {
@@ -454,4 +447,72 @@ button {
 h3 {
     margin: 10px;
     font-weight: 500;
+}
+
+.meet {
+    display: flex;
+    flex-direction: row; /* Alineación horizontal para pantallas grandes */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Permite envolver elementos en pantallas pequeñas */
+    padding: 10px; /* Espaciado alrededor de todo el contenedor .meet */
+}
+
+.leftmeet,
+.rightmeet {
+    flex: 1; /* Permite que cada div tome la mitad del espacio disponible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Espaciado interior para cada div */
+}
+
+.leftmeet {
+    order: 1; /* Asegura que .leftmeet venga primero */
+}
+
+.rightmeet {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    order: 2; /* Asegura que .rightmeet venga después */
+    padding: 35px; /* Ajusta el padding según sea necesario */
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.imgmeet {
+    max-width: 100%; /* Asegura que la imagen sea responsiva dentro de .leftmeet */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+@media (max-width: 768px) {
+    .meet {
+        display: flex;
+        flex-direction: column; /* Alineación vertical para pantallas pequeñas */
+    }
+
+    .leftmeet,
+    .rightmeet {
+        width: 100%; /* Toma todo el ancho disponible en pantallas pequeñas */
+        order: unset; /* Restablece el orden si fue cambiado */
+        padding: 20px; /* Reduce el padding para pantallas pequeñas */
+        margin: 0; /* Elimina margen para alineación vertical */
+    }
+
+    .imgmeet {
+        max-width: 100%; /* Asegura que la imagen sea responsiva */
+    }
+}
+
+
+.myjourney {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.centrejourney {
+    display: flex;
+    flex-direction: column;
 }
