@@ -415,7 +415,8 @@ input[type=checkbox] {
 
 .card {
     flex-basis: 30%; /* Establece una base para el ancho de cada tarjeta */
-    max-width: 300px; /* Ancho máximo para evitar que las tarjetas se deformen */
+    max-width: 280px; /* Ancho máximo para evitar que las tarjetas se deformen */
+    min-width: 280px;
     text-align: center; /* Centra el texto y el contenido de la tarjeta */
     padding: 20px; /* Espaciado interno */
     border: 1px solid #ddd; /* Borde ligero */
