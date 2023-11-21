@@ -10,7 +10,7 @@ a {
 
 h2 {
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
@@ -150,6 +150,11 @@ input[type=checkbox] {
     flex-wrap: wrap; /* Permite envolver elementos en pantallas pequeñas */
 }
 
+.centro {
+    display: flex;
+    max-width: 1200px;
+}
+
 .left-div,
 .right-div {
     flex: 1; /* Permite que cada div tome la mitad del espacio disponible */
@@ -157,19 +162,20 @@ input[type=checkbox] {
     justify-content: center;
     align-items: center;
     padding: 10px; /* Se mantiene */
+
 }
 
 .left-div {
     background-color: #ffffff; /* Se mantiene */
-    max-width: 500px; /* Se mantiene */
+    min-width: 400px; /* Se mantiene */
     width: 100%; /* Se mantiene */
     height: auto; /* Se mantiene */
     display: flex;
     flex-direction: column;
     margin: 30px; /* Se mantiene */
-    padding: 35px; /* Se mantiene */
+    padding: 25px; /* Se mantiene */
     align-items: start; /* Se mantiene */
-    border-radius: 20px; /* Se mantiene */
+    border-radius: 10px; /* Se mantiene */
     box-sizing: border-box; /* Se mantiene */
 }
 
@@ -184,15 +190,28 @@ input[type=checkbox] {
 @media (max-width: 768px) {
     .main-section {
         flex-direction: column; /* Alineación vertical para pantallas pequeñas */
+        padding: 0; /* Elimina el padding si está afectando la centración */
     }
 
-    .left-div {
-        padding: 10px;
+    .centro {
+        max-width: 100%; /* Asegúrate de que el contenedor centro no exceda el ancho de la pantalla */
+        flex-direction: column; /* Alineación vertical para pantallas pequeñas */
+        padding: 20px;
+    }
+
+    .left-div,
+    .right-div {
+        min-width: 0; /* Elimina la restricción de min-width para que ocupe el ancho disponible */
+        width: 100%; /* Toma todo el ancho disponible */
+        margin: 0; /* Elimina los márgenes laterales */
+        align-items: center; /* Centra el contenido horizontalmente */
     }
 
     .formulario {
-        margin: 10px auto; /* Centra el formulario en pantallas pequeñas */
+        margin: 10px auto; /* Centra el formulario */
         padding: 15px; /* Ajusta el padding según sea necesario */
+        width: 90%; /* Ajusta el ancho para mejor lectura */
+        max-width: 500px; /* Opcional: puedes establecer un ancho máximo para el formulario si es necesario */
     }
 }
 
@@ -213,9 +232,6 @@ input[type=checkbox] {
     display: inline-block; /* Se mantiene */
     border-radius: 5px; /* Se mantiene */
 }
-
-
-
 
 /* Estilos para el menú de categorías BLOG BLOG BLOG BLOG*/
 .category-menu {
@@ -334,6 +350,8 @@ input[type=checkbox] {
     /* Centra el contenido verticalmente */
     padding: 10px;
     /* Espaciado interior */
+    max-width: 1200px;
+    margin: auto;
 }
 
 .meleft {
@@ -391,6 +409,8 @@ input[type=checkbox] {
     /* Permite que las tarjetas se ajusten en filas en pantallas más pequeñas */
     gap: 10px;
     /* Espacio entre tarjetas */
+    max-width: 1200px;
+    margin: auto;
 }
 
 .card {
