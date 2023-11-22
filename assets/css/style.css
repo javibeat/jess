@@ -152,7 +152,7 @@ input[type=checkbox] {
 
 .centro {
     display: flex;
-    max-width: 1200px;
+    width: 1200px;
 }
 
 .left-div,
@@ -167,7 +167,7 @@ input[type=checkbox] {
 
 .left-div {
     background-color: #ffffff; /* Se mantiene */
-    min-width: 400px; /* Se mantiene */
+    max-width: 400px; /* Se mantiene */
     width: 100%; /* Se mantiene */
     height: auto; /* Se mantiene */
     display: flex;
@@ -194,24 +194,27 @@ input[type=checkbox] {
     }
 
     .centro {
-        max-width: 100%; /* Asegúrate de que el contenedor centro no exceda el ancho de la pantalla */
+        width: 100%; /* Asegúrate de que el contenedor centro no exceda el ancho de la pantalla */
         flex-direction: column; /* Alineación vertical para pantallas pequeñas */
-        padding: 20px;
+        align-items: center; /* Centra los elementos secundarios */
+        padding: 0; /* Elimina el padding para ajustar el ancho */
     }
 
     .left-div,
     .right-div {
-        min-width: 0; /* Elimina la restricción de min-width para que ocupe el ancho disponible */
         width: 100%; /* Toma todo el ancho disponible */
         margin: 0; /* Elimina los márgenes laterales */
         align-items: center; /* Centra el contenido horizontalmente */
+        justify-content: center; /* Centra el contenido verticalmente */
+        padding: 20px; /* Ajusta el padding para pantallas pequeñas */
+        box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
     }
 
     .formulario {
-        margin: 10px auto; /* Centra el formulario */
-        padding: 15px; /* Ajusta el padding según sea necesario */
         width: 90%; /* Ajusta el ancho para mejor lectura */
-        max-width: 500px; /* Opcional: puedes establecer un ancho máximo para el formulario si es necesario */
+        max-width: 500px; /* Establece un ancho máximo para el formulario */
+        margin: 20px auto; /* Centra el formulario */
+        padding: 15px; /* Ajusta el padding según sea necesario */
     }
 }
 
