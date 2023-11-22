@@ -45,12 +45,6 @@ nav {
     color: #ff2c2c;
 }
 
-/* .social {
-    display: flex;
-    justify-content: space-around;
-    padding: 0 0 0 15px;
-} */
-
 .bx {
     display: flex;
     justify-content: center;
@@ -615,4 +609,10 @@ h3 {
 .centrejourney {
     display: flex;
     flex-direction: column;
+}
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 0 15px;
 }
