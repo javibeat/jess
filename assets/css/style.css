@@ -141,13 +141,18 @@ input[type=checkbox] {
 /* Section Styles */
 .main-section {
     display: flex;
-    flex-direction: row; /* Alineación horizontal para pantallas grandes */
+    flex-direction: row;
+    /* Alineación horizontal para pantallas grandes */
     justify-content: center;
     align-items: center;
-    background: url('/assets/images/jess.jpg') center center / cover no-repeat; /* Se mantiene */
-    height: 100vh; /* Se mantiene */
-    width: 100vw; /* Se mantiene */
-    flex-wrap: wrap; /* Permite envolver elementos en pantallas pequeñas */
+    background: url('/assets/images/jess.jpg') center center / cover no-repeat;
+    /* Se mantiene */
+    height: 100vh;
+    /* Se mantiene */
+    width: 100vw;
+    /* Se mantiene */
+    flex-wrap: wrap;
+    /* Permite envolver elementos en pantallas pequeñas */
 }
 
 .centro {
@@ -157,83 +162,124 @@ input[type=checkbox] {
 
 .left-div,
 .right-div {
-    flex: 1; /* Permite que cada div tome la mitad del espacio disponible */
+    flex: 1;
+    /* Permite que cada div tome la mitad del espacio disponible */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px; /* Se mantiene */
+    padding: 10px;
+    /* Se mantiene */
 
 }
 
 .left-div {
-    background-color: #ffffff; /* Se mantiene */
-    max-width: 400px; /* Se mantiene */
-    width: 100%; /* Se mantiene */
-    height: auto; /* Se mantiene */
+    background-color: #ffffff;
+    /* Se mantiene */
+    max-width: 400px;
+    /* Se mantiene */
+    width: 100%;
+    /* Se mantiene */
+    height: auto;
+    /* Se mantiene */
     display: flex;
     flex-direction: column;
-    margin: 30px; /* Se mantiene */
-    padding: 25px; /* Se mantiene */
-    align-items: start; /* Se mantiene */
-    border-radius: 10px; /* Se mantiene */
-    box-sizing: border-box; /* Se mantiene */
+    margin: 30px;
+    /* Se mantiene */
+    padding: 25px;
+    /* Se mantiene */
+    align-items: start;
+    /* Se mantiene */
+    border-radius: 10px;
+    /* Se mantiene */
+    box-sizing: border-box;
+    /* Se mantiene */
 }
 
 .right-div {
-    background-color: transparent; /* Se mantiene */
+    background-color: transparent;
+    /* Se mantiene */
 }
 
 .texto {
-    margin-bottom: 30px; /* Se mantiene */
+    margin-bottom: 30px;
+    /* Se mantiene */
 }
 
 @media (max-width: 768px) {
     .main-section {
-        flex-direction: column; /* Alineación vertical para pantallas pequeñas */
-        padding: 0; /* Elimina el padding si está afectando la centración */
+        flex-direction: column;
+        /* Alineación vertical para pantallas pequeñas */
+        padding: 0;
+        /* Elimina el padding si está afectando la centración */
     }
 
     .centro {
-        width: 100%; /* Asegúrate de que el contenedor centro no exceda el ancho de la pantalla */
-        flex-direction: column; /* Alineación vertical para pantallas pequeñas */
-        align-items: center; /* Centra los elementos secundarios */
-        padding: 0; /* Elimina el padding para ajustar el ancho */
+        width: 100%;
+        /* Asegúrate de que el contenedor centro no exceda el ancho de la pantalla */
+        flex-direction: column;
+        /* Alineación vertical para pantallas pequeñas */
+        align-items: center;
+        /* Centra los elementos secundarios */
+        padding: 0;
+        /* Elimina el padding para ajustar el ancho */
     }
 
     .left-div,
     .right-div {
-        width: 100%; /* Toma todo el ancho disponible */
-        margin: 0; /* Elimina los márgenes laterales */
-        align-items: center; /* Centra el contenido horizontalmente */
-        justify-content: center; /* Centra el contenido verticalmente */
-        padding: 20px; /* Ajusta el padding para pantallas pequeñas */
-        box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+        width: 100%;
+        /* Toma todo el ancho disponible */
+        margin: 0;
+        /* Elimina los márgenes laterales */
+        align-items: center;
+        /* Centra el contenido horizontalmente */
+        justify-content: center;
+        /* Centra el contenido verticalmente */
+        padding: 20px;
+        /* Ajusta el padding para pantallas pequeñas */
+        box-sizing: border-box;
+        /* Asegura que el padding no afecte el ancho total */
     }
 
     .formulario {
-        width: 90%; /* Ajusta el ancho para mejor lectura */
-        max-width: 500px; /* Establece un ancho máximo para el formulario */
-        margin: 20px auto; /* Centra el formulario */
-        padding: 15px; /* Ajusta el padding según sea necesario */
+        width: 90%;
+        /* Ajusta el ancho para mejor lectura */
+        max-width: 500px;
+        /* Establece un ancho máximo para el formulario */
+        margin: 20px auto;
+        /* Centra el formulario */
+        padding: 15px;
+        /* Ajusta el padding según sea necesario */
     }
 }
 
 .formulario {
-    background-color: #ff2c2c; /* Se mantiene */
-    width: auto; /* Se mantiene */
-    height: auto; /* Se mantiene */
-    padding: 15px; /* Se mantiene */
-    border-radius: 10px; /* Se mantiene */
-    font-size: 18px; /* Se mantiene */
-    text-align: center; /* Asegura que el texto esté centrado */
+    background-color: #ff2c2c;
+    /* Se mantiene */
+    width: auto;
+    /* Se mantiene */
+    height: auto;
+    /* Se mantiene */
+    padding: 15px;
+    /* Se mantiene */
+    border-radius: 10px;
+    /* Se mantiene */
+    font-size: 18px;
+    /* Se mantiene */
+    text-align: center;
+    /* Asegura que el texto esté centrado */
 }
 
 .formulario a {
-    color: white; /* Se mantiene */
-    text-decoration: none; /* Se mantiene */
-    padding: 10px 20px; /* Se mantiene */
-    display: inline-block; /* Se mantiene */
-    border-radius: 5px; /* Se mantiene */
+    color: white;
+    /* Se mantiene */
+    text-decoration: none;
+    /* Se mantiene */
+    padding: 10px 20px;
+    /* Se mantiene */
+    display: inline-block;
+    /* Se mantiene */
+    border-radius: 5px;
+    /* Se mantiene */
 }
 
 /* Estilos para el menú de categorías BLOG BLOG BLOG BLOG*/
@@ -417,23 +463,35 @@ input[type=checkbox] {
 }
 
 .card {
-    flex-basis: 30%; /* Establece una base para el ancho de cada tarjeta */
-    max-width: 280px; /* Ancho máximo para evitar que las tarjetas se deformen */
+    flex-basis: 30%;
+    /* Establece una base para el ancho de cada tarjeta */
+    max-width: 280px;
+    /* Ancho máximo para evitar que las tarjetas se deformen */
     min-width: 280px;
-    text-align: center; /* Centra el texto y el contenido de la tarjeta */
-    padding: 20px; /* Espaciado interno */
-    border: 1px solid #ddd; /* Borde ligero */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-    margin: 10px; /* Margen alrededor de las tarjetas */
+    text-align: center;
+    /* Centra el texto y el contenido de la tarjeta */
+    padding: 20px;
+    /* Espaciado interno */
+    border: 1px solid #ddd;
+    /* Borde ligero */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    margin: 10px;
+    /* Margen alrededor de las tarjetas */
     display: flex;
-    flex-direction: column; /* Organiza el contenido de la tarjeta verticalmente */
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: center; /* Alinea elementos horizontalmente al centro */
-    background: #fff; /* Fondo blanco para las tarjetas, si es necesario */
+    flex-direction: column;
+    /* Organiza el contenido de la tarjeta verticalmente */
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+    align-items: center;
+    /* Alinea elementos horizontalmente al centro */
+    background: #fff;
+    /* Fondo blanco para las tarjetas, si es necesario */
 }
 
-.separador{
+.separador {
     border-bottom: 2px solid #333;
     margin-top: 20px;
 }
@@ -477,57 +535,73 @@ h3 {
 
 .meet {
     display: flex;
-    flex-direction: row; /* Alineación horizontal para pantallas grandes */
+    flex-direction: row;
+    /* Alineación horizontal para pantallas grandes */
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; /* Permite envolver elementos en pantallas pequeñas */
-    padding: 10px; /* Espaciado alrededor de todo el contenedor .meet */
+    flex-wrap: wrap;
+    /* Permite envolver elementos en pantallas pequeñas */
+    padding: 10px;
+    /* Espaciado alrededor de todo el contenedor .meet */
 }
 
 .leftmeet,
 .rightmeet {
-    flex: 1; /* Permite que cada div tome la mitad del espacio disponible */
+    flex: 1;
+    /* Permite que cada div tome la mitad del espacio disponible */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px; /* Espaciado interior para cada div */
+    padding: 10px;
+    /* Espaciado interior para cada div */
 }
 
 .leftmeet {
-    order: 1; /* Asegura que .leftmeet venga primero */
+    order: 1;
+    /* Asegura que .leftmeet venga primero */
 }
 
 .rightmeet {
     display: flex;
     flex-direction: column;
     align-items: start;
-    order: 2; /* Asegura que .rightmeet venga después */
-    padding: 35px; /* Ajusta el padding según sea necesario */
+    order: 2;
+    /* Asegura que .rightmeet venga después */
+    padding: 35px;
+    /* Ajusta el padding según sea necesario */
     border-radius: 20px;
     box-sizing: border-box;
 }
 
 .imgmeet {
-    max-width: 100%; /* Asegura que la imagen sea responsiva dentro de .leftmeet */
-    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%;
+    /* Asegura que la imagen sea responsiva dentro de .leftmeet */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
 }
 
 @media (max-width: 768px) {
     .meet {
         display: flex;
-        flex-direction: column; /* Alineación vertical para pantallas pequeñas */
+        flex-direction: column;
+        /* Alineación vertical para pantallas pequeñas */
     }
 
     .leftmeet,
     .rightmeet {
-        width: 100%; /* Toma todo el ancho disponible en pantallas pequeñas */
-        order: unset; /* Restablece el orden si fue cambiado */
-        padding: 20px; /* Reduce el padding para pantallas pequeñas */
-        margin: 0; /* Elimina margen para alineación vertical */
+        width: 100%;
+        /* Toma todo el ancho disponible en pantallas pequeñas */
+        order: unset;
+        /* Restablece el orden si fue cambiado */
+        padding: 20px;
+        /* Reduce el padding para pantallas pequeñas */
+        margin: 0;
+        /* Elimina margen para alineación vertical */
     }
 
     .imgmeet {
-        max-width: 100%; /* Asegura que la imagen sea responsiva */
+        max-width: 100%;
+        /* Asegura que la imagen sea responsiva */
     }
 }
 
