@@ -45,19 +45,6 @@ nav {
     color: #ff2c2c;
 }
 
-.bx {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background: rgb(163, 122, 39);
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    border-radius: 35px;
-    cursor: pointer;
-}
-
 /* DROPDOWN MENU */
 
 .dropdown {
@@ -609,6 +596,58 @@ h3 {
 .centrejourney {
     display: flex;
     flex-direction: column;
+}
+
+.calendly {
+    margin: 50px;
+}
+
+.h2coach {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    padding-bottom: 15px; /* Ajusta la separación entre el texto y la línea */
+}
+
+.h2coach::after {
+    content: ''; /* Importante para que el pseudo-elemento se genere */
+    display: block; /* Hace que el pseudo-elemento sea como un div */
+    margin: 0 auto; /* Esto centrará la línea si no tiene un ancho establecido al 100% */
+    height: 2px; /* El grosor de tu línea */
+    width: 50%; /* El ancho de la línea respecto al elemento .h2coach */
+    background-color: #333; /* El color de tu línea */
+    position: absolute; /* Posicionamiento absoluto respecto al elemento .h2coach */
+    bottom: 0; /* Alineado en la parte inferior del elemento .h2coach */
+    left: 0; /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
+    right: 0; /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mail a {
+    color: black;
+}
+
+.bx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #ad814b;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 35px;
+    cursor: pointer;
 }
 
 .social {
