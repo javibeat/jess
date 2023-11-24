@@ -611,8 +611,6 @@ h3 {
         /* Toma todo el ancho disponible en pantallas pequeñas */
         order: unset;
         /* Restablece el orden si fue cambiado */
-        padding: 20px;
-        /* Reduce el padding para pantallas pequeñas */
         margin: 0;
         /* Elimina margen para alineación vertical */
     }
@@ -652,6 +650,9 @@ h3 {
 .centrejourney {
     display: flex;
     flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px;
 }
 
 .calendly {
