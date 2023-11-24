@@ -580,7 +580,7 @@ h3 {
     align-items: start;
     order: 2;
     /* Asegura que .rightmeet venga después */
-    padding: 35px;
+    padding: 30px;
     /* Ajusta el padding según sea necesario */
     border-radius: 20px;
     box-sizing: border-box;
@@ -652,7 +652,7 @@ h3 {
     flex-direction: column;
     max-width: 1200px;
     margin: auto;
-    padding: 35px;
+    padding: 30px;
 }
 
 .calendly {
