@@ -14,6 +14,18 @@ h2 {
     text-align: center;
 }
 
+header {
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; /* Alinea el header en la parte superior de la página */
+    left: 0; /* Alinea el header a la izquierda de la página */
+    width: 100%; /* Hace que el header ocupe el ancho completo */
+    z-index: 1000; /* Asegura que el header se quede sobre el resto del contenido */
+}
+
+body {
+    padding-top: 50px; /* Ajusta este valor según la altura de tu header */
+}
+
 nav {
     display: flex;
     grid-template-columns: 150px auto 150px;
@@ -48,7 +60,7 @@ nav {
 /* DROPDOWN MENU */
 
 .dropdown {
-    background-color: rgb(247, 244, 242);
+    background-color: rgb(255, 255, 255);
     padding: 1em 0;
     position: absolute;
     /*WITH RESPECT TO PARENT*/
@@ -89,12 +101,12 @@ input[type=checkbox] {
     .menu {
         display: none;
         position: absolute;
-        background-color: rgb(247, 244, 242);
+        background-color: rgb(255, 255, 255);
         right: 0;
         left: 0;
         text-align: center;
         padding: 25px 0;
-        margin-top: 5px;
+        margin-top: 15px;
     }
 
     .menu li+li {
@@ -366,7 +378,7 @@ input[type=checkbox] {
     /* Centra los elementos horizontalmente */
     align-items: center;
     /* Centra los elementos verticalmente */
-    padding: 150px 50px 150px 50px;
+    padding: 150px 30px 150px 30px;
 }
 
 .medivs {
@@ -378,8 +390,6 @@ input[type=checkbox] {
     /* Centra el contenido horizontalmente */
     align-items: center;
     /* Centra el contenido verticalmente */
-    padding: 10px;
-    /* Espaciado interior */
     max-width: 1200px;
     margin: auto;
 }
@@ -406,7 +416,7 @@ input[type=checkbox] {
 
 .formulario2 {
     background-color: #ad814b;
-    margin: 30px 15px;
+    margin-top: 25px;
     display: inline-block;
     /* Ajusta el ancho al del contenido y permite el uso de padding */
     padding: 15px;
