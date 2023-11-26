@@ -444,6 +444,30 @@ input[type=checkbox] {
     padding: 150px 30px 150px 30px;
 }
 
+.juicy {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    padding-bottom: 15px; /* Ajusta la separación entre el texto y la línea */
+}
+
+.juicy::after {
+    content: ''; /* Importante para que el pseudo-elemento se genere */
+    display: block; /* Hace que el pseudo-elemento sea como un div */
+    margin: 0 auto; /* Esto centrará la línea si no tiene un ancho establecido al 100% */
+    height: 2px; /* El grosor de tu línea */
+    width: 100px; /* El ancho de la línea respecto al elemento .h2coach */
+    background-color: #333; /* El color de tu línea */
+    position: absolute; /* Posicionamiento absoluto respecto al elemento .h2coach */
+    bottom: 0; /* Alineado en la parte inferior del elemento .h2coach */
+    left: 0; /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
+    right: 0; /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
+}
+
+/* display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px; */
+
 .cards-container {
     display: flex;
     justify-content: center;
@@ -492,7 +516,7 @@ input[type=checkbox] {
 
 .texto {
     margin: 25px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .icono {
@@ -553,7 +577,7 @@ h3 {
     display: block; /* Hace que el pseudo-elemento sea como un div */
     margin: 0; /* Esto centrará la línea si no tiene un ancho establecido al 100% */
     height: 2px; /* El grosor de tu línea */
-    width: 50%; /* El ancho de la línea respecto al elemento .h2coach */
+    width: 100px; /* El ancho de la línea respecto al elemento .h2coach */
     background-color: #333; /* El color de tu línea */
     position: absolute; /* Posicionamiento absoluto respecto al elemento .h2coach */
     bottom: 0; /* Alineado en la parte inferior del elemento .h2coach */
@@ -642,7 +666,7 @@ h3 {
     display: block; /* Hace que el pseudo-elemento sea como un div */
     margin: 0 auto; /* Esto centrará la línea si no tiene un ancho establecido al 100% */
     height: 2px; /* El grosor de tu línea */
-    width: 50%; /* El ancho de la línea respecto al elemento .h2coach */
+    width: 100px; /* El ancho de la línea respecto al elemento .h2coach */
     background-color: #333; /* El color de tu línea */
     position: absolute; /* Posicionamiento absoluto respecto al elemento .h2coach */
     bottom: 0; /* Alineado en la parte inferior del elemento .h2coach */
@@ -672,12 +696,61 @@ h3 {
     display: block; /* Hace que el pseudo-elemento sea como un div */
     margin: 0 auto; /* Esto centrará la línea si no tiene un ancho establecido al 100% */
     height: 2px; /* El grosor de tu línea */
-    width: 50%; /* El ancho de la línea respecto al elemento .h2coach */
+    width: 100px; /* El ancho de la línea respecto al elemento .h2coach */
     background-color: #333; /* El color de tu línea */
     position: absolute; /* Posicionamiento absoluto respecto al elemento .h2coach */
     bottom: 0; /* Alineado en la parte inferior del elemento .h2coach */
     left: 0; /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
     right: 0; /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 50px 150px 50px;
+}
+
+.efic {
+    position: relative; /* Necesario para posicionar el pseudo-elemento */
+    padding-bottom: 15px; /* Ajusta la separación entre el texto y la línea */
+}
+
+.efic::after {
+    content: ''; /* Importante para que el pseudo-elemento se genere */
+    display: block; /* Hace que el pseudo-elemento sea como un div */
+    margin: 0 auto; /* Esto centrará la línea si no tiene un ancho establecido al 100% */
+    height: 2px; /* El grosor de tu línea */
+    width: 100px; /* El ancho de la línea respecto al elemento .h2coach */
+    background-color: #333; /* El color de tu línea */
+    position: absolute; /* Posicionamiento absoluto respecto al elemento .h2coach */
+    bottom: 0; /* Alineado en la parte inferior del elemento .h2coach */
+    left: 0; /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
+    right: 0; /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
+}
+
+.card1 {
+    flex-basis: 30%;
+    /* Establece una base para el ancho de cada tarjeta */
+    max-width: 280px;
+    /* Ancho máximo para evitar que las tarjetas se deformen */
+    min-width: 280px;
+    text-align: center;
+    /* Centra el texto y el contenido de la tarjeta */
+    padding: 20px;
+    /* Espaciado interno */
+    margin: 10px;
+    /* Margen alrededor de las tarjetas */
+    display: flex;
+    flex-direction: column;
+    /* Organiza el contenido de la tarjeta verticalmente */
+    justify-content: center;
+    /* Centra el contenido verticalmente */
+    align-items: center;
+    /* Alinea elementos horizontalmente al centro */
+    background: #fff;
+    /* Fondo blanco para las tarjetas, si es necesario */
 }
 
 .contact {
