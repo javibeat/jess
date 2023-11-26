@@ -791,3 +791,25 @@ h3 {
 .social i {
     margin: 5px;
 }
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+    box-shadow: #333;
+    padding: 20px;
+}
+
+footer img {
+    width: 50px;
+}
+
+@media (max-width: 768px) {
+    footer {
+        display: flex;
+    flex-direction: column;
+    }
+}
