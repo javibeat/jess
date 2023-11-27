@@ -188,6 +188,11 @@ input[type=checkbox] {
     /* Se mantiene */
 }
 
+.h1index {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
 .right-div {
     background-color: transparent;
     /* Se mantiene */
@@ -245,6 +250,12 @@ input[type=checkbox] {
     }
 }
 
+.formulariocentro {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
 .formulario {
     background-color: #ff2c2c;
     /* Se mantiene */
@@ -252,7 +263,7 @@ input[type=checkbox] {
     /* Se mantiene */
     height: auto;
     /* Se mantiene */
-    padding: 15px;
+    padding: 5px;
     /* Se mantiene */
     border-radius: 10px;
     /* Se mantiene */
@@ -260,6 +271,18 @@ input[type=checkbox] {
     /* Se mantiene */
     text-align: center;
     /* Asegura que el texto esté centrado */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transición suave para sombra y transformación */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra inicial */
+}
+
+.formulario:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más prominente al hacer hover */
+    transform: translateY(-2px); /* Efecto de 'levantar' el botón */
+}
+
+.formulario:active {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más sutil al hacer click */
+    transform: translateY(0); /* El botón vuelve a su posición inicial al hacer click */
 }
 
 .formulario a {
@@ -426,6 +449,8 @@ input[type=checkbox] {
     border-radius: 10px;
     font-size: 18px;
     text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transición suave para sombra y transformación */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra inicial */
 }
 
 .formulario2 a {
@@ -433,6 +458,16 @@ input[type=checkbox] {
     /* Asegura que los enlaces dentro de .formulario2 también sean blancos */
     text-decoration: none;
     /* Opcional: elimina el subrayado del enlace */
+}
+
+.formulario2:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más prominente al hacer hover */
+    transform: translateY(-2px); /* Efecto de 'levantar' el botón */
+}
+
+.formulario2:active {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más sutil al hacer click */
+    transform: translateY(0); /* El botón vuelve a su posición inicial al hacer click */
 }
 
 .mcentro {
@@ -528,14 +563,25 @@ input[type=checkbox] {
 
 button {
     margin-bottom: 15px;
-    /* Espacio encima del botón */
     padding: 10px 20px;
-    /* Espaciado interno del botón */
     border: none;
     background-color: #ad814b;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 15px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transición suave para sombra y transformación */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra inicial */
+}
+
+button:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más prominente al hacer hover */
+    transform: translateY(-2px); /* Efecto de 'levantar' el botón */
+}
+
+button:active {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más sutil al hacer click */
+    transform: translateY(0); /* El botón vuelve a su posición inicial al hacer click */
 }
 
 /* Responsive Design */
