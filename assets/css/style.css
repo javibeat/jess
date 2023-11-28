@@ -23,7 +23,7 @@ header {
 }
 
 body {
-    padding-top: 50px; /* Ajusta este valor según la altura de tu header */
+    padding-top: 70px; /* Ajusta este valor según la altura de tu header */
 }
 
 nav {
@@ -859,4 +859,70 @@ footer img {
     flex-direction: column;
     justify-content: center;
     }
+}
+
+.mainsection {
+    display: flex;
+    flex-direction: column;
+    /* Alineación horizontal para pantallas grandes */
+    justify-content: center;
+    align-items: center;
+    background: url('/assets/images/jess.jpg') center center / cover no-repeat;
+    /* Se mantiene */
+    height: 400px;
+}
+
+.abroad {
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 80px;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .abroad {
+        font-size: 50px;
+    }
+
+    .abroadh2{
+        font-size: 20px;
+        margin: 0 50px;
+    }
+}
+
+.life {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    padding: 150px 50px 150px 50px;
+}
+
+.h3class {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.pclass {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.meet2{
+    background-color: rgb(239, 239, 239);
+    padding: 150px 50px 150px 50px;
+}
+
+.meet2texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
 }
