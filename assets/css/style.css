@@ -1078,3 +1078,7 @@ footer img {
 .accordion.active .arrow-icon {
     transform: rotate(180deg);
 }
+
+.accordion p {
+    font-size: 16px;
+}
