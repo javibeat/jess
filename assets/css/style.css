@@ -1025,6 +1025,8 @@ footer img {
 .post-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin: auto;
 }
 
 /*FIN BLOG-----------------------------------------------------------*/
