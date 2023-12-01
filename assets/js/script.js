@@ -12,3 +12,16 @@ function filterPosts(category) {
         }
     });
 }
+
+document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const accordion = header.parentElement;
+
+        if(accordion.classList.contains('active')) {
+            accordion.classList.remove('active');
+        } else {
+            document.querySelectorAll('.accordion').forEach(acc => acc.classList.remove('active'));
+            accordion.classList.add('active');
+        }
+    });
+});

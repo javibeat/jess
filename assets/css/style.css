@@ -15,15 +15,21 @@ h2 {
 }
 
 header {
-    position: fixed; /* Fija el header en la parte superior */
-    top: 0; /* Alinea el header en la parte superior de la página */
-    left: 0; /* Alinea el header a la izquierda de la página */
-    width: 100%; /* Hace que el header ocupe el ancho completo */
-    z-index: 1000; /* Asegura que el header se quede sobre el resto del contenido */
+    position: fixed;
+    /* Fija el header en la parte superior */
+    top: 0;
+    /* Alinea el header en la parte superior de la página */
+    left: 0;
+    /* Alinea el header a la izquierda de la página */
+    width: 100%;
+    /* Hace que el header ocupe el ancho completo */
+    z-index: 1000;
+    /* Asegura que el header se quede sobre el resto del contenido */
 }
 
 body {
-    padding-top: 70px; /* Ajusta este valor según la altura de tu header */
+    padding-top: 70px;
+    /* Ajusta este valor según la altura de tu header */
 }
 
 nav {
@@ -130,6 +136,11 @@ input[type=checkbox] {
 }
 
 /* RESPONSIVE MENU END */
+
+.seccion {
+    background-color: rgb(239, 239, 239);
+    padding: 100px 40px 100px 40px;
+}
 
 /* Section Styles */
 .main-section {
@@ -271,18 +282,24 @@ input[type=checkbox] {
     /* Se mantiene */
     text-align: center;
     /* Asegura que el texto esté centrado */
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transición suave para sombra y transformación */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra inicial */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* Transición suave para sombra y transformación */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    /* Sombra inicial */
 }
 
 .formulario:hover {
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más prominente al hacer hover */
-    transform: translateY(-2px); /* Efecto de 'levantar' el botón */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    /* Sombra más prominente al hacer hover */
+    transform: translateY(-2px);
+    /* Efecto de 'levantar' el botón */
 }
 
 .formulario:active {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más sutil al hacer click */
-    transform: translateY(0); /* El botón vuelve a su posición inicial al hacer click */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra más sutil al hacer click */
+    transform: translateY(0);
+    /* El botón vuelve a su posición inicial al hacer click */
 }
 
 .formulario a {
@@ -449,8 +466,10 @@ input[type=checkbox] {
     border-radius: 10px;
     font-size: 18px;
     text-align: center;
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transición suave para sombra y transformación */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra inicial */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* Transición suave para sombra y transformación */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    /* Sombra inicial */
 }
 
 .formulario2 a {
@@ -461,13 +480,17 @@ input[type=checkbox] {
 }
 
 .formulario2:hover {
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más prominente al hacer hover */
-    transform: translateY(-2px); /* Efecto de 'levantar' el botón */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    /* Sombra más prominente al hacer hover */
+    transform: translateY(-2px);
+    /* Efecto de 'levantar' el botón */
 }
 
 .formulario2:active {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más sutil al hacer click */
-    transform: translateY(0); /* El botón vuelve a su posición inicial al hacer click */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra más sutil al hacer click */
+    transform: translateY(0);
+    /* El botón vuelve a su posición inicial al hacer click */
 }
 
 .mcentro {
@@ -480,21 +503,33 @@ input[type=checkbox] {
 }
 
 .juicy {
-    position: relative; /* Necesario para posicionar el pseudo-elemento */
-    padding-bottom: 15px; /* Ajusta la separación entre el texto y la línea */
+    position: relative;
+    /* Necesario para posicionar el pseudo-elemento */
+    padding-bottom: 15px;
+    /* Ajusta la separación entre el texto y la línea */
 }
 
 .juicy::after {
-    content: ''; /* Importante para que el pseudo-elemento se genere */
-    display: block; /* Hace que el pseudo-elemento sea como un div */
-    margin: 0 auto; /* Esto centrará la línea si no tiene un ancho establecido al 100% */
-    height: 2px; /* El grosor de tu línea */
-    width: 100px; /* El ancho de la línea respecto al elemento .h2coach */
-    background-color: #333; /* El color de tu línea */
-    position: absolute; /* Posicionamiento absoluto respecto al elemento .h2coach */
-    bottom: 0; /* Alineado en la parte inferior del elemento .h2coach */
-    left: 0; /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
-    right: 0; /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
+    content: '';
+    /* Importante para que el pseudo-elemento se genere */
+    display: block;
+    /* Hace que el pseudo-elemento sea como un div */
+    margin: 0 auto;
+    /* Esto centrará la línea si no tiene un ancho establecido al 100% */
+    height: 2px;
+    /* El grosor de tu línea */
+    width: 100px;
+    /* El ancho de la línea respecto al elemento .h2coach */
+    background-color: #333;
+    /* El color de tu línea */
+    position: absolute;
+    /* Posicionamiento absoluto respecto al elemento .h2coach */
+    bottom: 0;
+    /* Alineado en la parte inferior del elemento .h2coach */
+    left: 0;
+    /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
+    right: 0;
+    /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
 }
 
 /* display: flex;
@@ -570,18 +605,24 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 15px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transición suave para sombra y transformación */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra inicial */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* Transición suave para sombra y transformación */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    /* Sombra inicial */
 }
 
 button:hover {
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más prominente al hacer hover */
-    transform: translateY(-2px); /* Efecto de 'levantar' el botón */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+    /* Sombra más prominente al hacer hover */
+    transform: translateY(-2px);
+    /* Efecto de 'levantar' el botón */
 }
 
 button:active {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más sutil al hacer click */
-    transform: translateY(0); /* El botón vuelve a su posición inicial al hacer click */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Sombra más sutil al hacer click */
+    transform: translateY(0);
+    /* El botón vuelve a su posición inicial al hacer click */
 }
 
 /* Responsive Design */
@@ -614,21 +655,33 @@ h3 {
 
 .h1meet {
     font-weight: 500;
-    position: relative; /* Necesario para posicionar el pseudo-elemento */
-    padding-bottom: 15px; /* Ajusta la separación entre el texto y la línea */
+    position: relative;
+    /* Necesario para posicionar el pseudo-elemento */
+    padding-bottom: 15px;
+    /* Ajusta la separación entre el texto y la línea */
 }
 
 .h1meet::after {
-    content: ''; /* Importante para que el pseudo-elemento se genere */
-    display: block; /* Hace que el pseudo-elemento sea como un div */
-    margin: 0; /* Esto centrará la línea si no tiene un ancho establecido al 100% */
-    height: 2px; /* El grosor de tu línea */
-    width: 100px; /* El ancho de la línea respecto al elemento .h2coach */
-    background-color: #333; /* El color de tu línea */
-    position: absolute; /* Posicionamiento absoluto respecto al elemento .h2coach */
-    bottom: 0; /* Alineado en la parte inferior del elemento .h2coach */
-    left: 0; /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
-    right: 0; /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
+    content: '';
+    /* Importante para que el pseudo-elemento se genere */
+    display: block;
+    /* Hace que el pseudo-elemento sea como un div */
+    margin: 0;
+    /* Esto centrará la línea si no tiene un ancho establecido al 100% */
+    height: 2px;
+    /* El grosor de tu línea */
+    width: 100px;
+    /* El ancho de la línea respecto al elemento .h2coach */
+    background-color: #333;
+    /* El color de tu línea */
+    position: absolute;
+    /* Posicionamiento absoluto respecto al elemento .h2coach */
+    bottom: 0;
+    /* Alineado en la parte inferior del elemento .h2coach */
+    left: 0;
+    /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
+    right: 0;
+    /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
 }
 
 .leftmeet,
@@ -703,21 +756,33 @@ h3 {
 }
 
 .h2myjourney {
-    position: relative; /* Necesario para posicionar el pseudo-elemento */
-    padding-bottom: 15px; /* Ajusta la separación entre el texto y la línea */
+    position: relative;
+    /* Necesario para posicionar el pseudo-elemento */
+    padding-bottom: 15px;
+    /* Ajusta la separación entre el texto y la línea */
 }
 
 .h2myjourney::after {
-    content: ''; /* Importante para que el pseudo-elemento se genere */
-    display: block; /* Hace que el pseudo-elemento sea como un div */
-    margin: 0 auto; /* Esto centrará la línea si no tiene un ancho establecido al 100% */
-    height: 2px; /* El grosor de tu línea */
-    width: 100px; /* El ancho de la línea respecto al elemento .h2coach */
-    background-color: #333; /* El color de tu línea */
-    position: absolute; /* Posicionamiento absoluto respecto al elemento .h2coach */
-    bottom: 0; /* Alineado en la parte inferior del elemento .h2coach */
-    left: 0; /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
-    right: 0; /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
+    content: '';
+    /* Importante para que el pseudo-elemento se genere */
+    display: block;
+    /* Hace que el pseudo-elemento sea como un div */
+    margin: 0 auto;
+    /* Esto centrará la línea si no tiene un ancho establecido al 100% */
+    height: 2px;
+    /* El grosor de tu línea */
+    width: 100px;
+    /* El ancho de la línea respecto al elemento .h2coach */
+    background-color: #333;
+    /* El color de tu línea */
+    position: absolute;
+    /* Posicionamiento absoluto respecto al elemento .h2coach */
+    bottom: 0;
+    /* Alineado en la parte inferior del elemento .h2coach */
+    left: 0;
+    /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
+    right: 0;
+    /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
 }
 
 .centrejourney {
@@ -733,21 +798,33 @@ h3 {
 }
 
 .h2coach {
-    position: relative; /* Necesario para posicionar el pseudo-elemento */
-    padding-bottom: 15px; /* Ajusta la separación entre el texto y la línea */
+    position: relative;
+    /* Necesario para posicionar el pseudo-elemento */
+    padding-bottom: 15px;
+    /* Ajusta la separación entre el texto y la línea */
 }
 
 .h2coach::after {
-    content: ''; /* Importante para que el pseudo-elemento se genere */
-    display: block; /* Hace que el pseudo-elemento sea como un div */
-    margin: 0 auto; /* Esto centrará la línea si no tiene un ancho establecido al 100% */
-    height: 2px; /* El grosor de tu línea */
-    width: 100px; /* El ancho de la línea respecto al elemento .h2coach */
-    background-color: #333; /* El color de tu línea */
-    position: absolute; /* Posicionamiento absoluto respecto al elemento .h2coach */
-    bottom: 0; /* Alineado en la parte inferior del elemento .h2coach */
-    left: 0; /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
-    right: 0; /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
+    content: '';
+    /* Importante para que el pseudo-elemento se genere */
+    display: block;
+    /* Hace que el pseudo-elemento sea como un div */
+    margin: 0 auto;
+    /* Esto centrará la línea si no tiene un ancho establecido al 100% */
+    height: 2px;
+    /* El grosor de tu línea */
+    width: 100px;
+    /* El ancho de la línea respecto al elemento .h2coach */
+    background-color: #333;
+    /* El color de tu línea */
+    position: absolute;
+    /* Posicionamiento absoluto respecto al elemento .h2coach */
+    bottom: 0;
+    /* Alineado en la parte inferior del elemento .h2coach */
+    left: 0;
+    /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
+    right: 0;
+    /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
 }
 
 .logos {
@@ -759,21 +836,33 @@ h3 {
 }
 
 .efic {
-    position: relative; /* Necesario para posicionar el pseudo-elemento */
-    padding-bottom: 15px; /* Ajusta la separación entre el texto y la línea */
+    position: relative;
+    /* Necesario para posicionar el pseudo-elemento */
+    padding-bottom: 15px;
+    /* Ajusta la separación entre el texto y la línea */
 }
 
 .efic::after {
-    content: ''; /* Importante para que el pseudo-elemento se genere */
-    display: block; /* Hace que el pseudo-elemento sea como un div */
-    margin: 0 auto; /* Esto centrará la línea si no tiene un ancho establecido al 100% */
-    height: 2px; /* El grosor de tu línea */
-    width: 100px; /* El ancho de la línea respecto al elemento .h2coach */
-    background-color: #333; /* El color de tu línea */
-    position: absolute; /* Posicionamiento absoluto respecto al elemento .h2coach */
-    bottom: 0; /* Alineado en la parte inferior del elemento .h2coach */
-    left: 0; /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
-    right: 0; /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
+    content: '';
+    /* Importante para que el pseudo-elemento se genere */
+    display: block;
+    /* Hace que el pseudo-elemento sea como un div */
+    margin: 0 auto;
+    /* Esto centrará la línea si no tiene un ancho establecido al 100% */
+    height: 2px;
+    /* El grosor de tu línea */
+    width: 100px;
+    /* El ancho de la línea respecto al elemento .h2coach */
+    background-color: #333;
+    /* El color de tu línea */
+    position: absolute;
+    /* Posicionamiento absoluto respecto al elemento .h2coach */
+    bottom: 0;
+    /* Alineado en la parte inferior del elemento .h2coach */
+    left: 0;
+    /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
+    right: 0;
+    /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
 }
 
 .card1 {
@@ -856,8 +945,8 @@ footer img {
 @media (max-width: 768px) {
     footer {
         display: flex;
-    flex-direction: column;
-    justify-content: center;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -885,7 +974,7 @@ footer img {
         font-size: 50px;
     }
 
-    .abroadh2{
+    .abroadh2 {
         font-size: 20px;
         margin: 0 50px;
     }
@@ -914,7 +1003,7 @@ footer img {
     margin-top: 30px;
 }
 
-.meet2{
+.meet2 {
     background-color: rgb(239, 239, 239);
     padding: 150px 50px 150px 50px;
 }
@@ -925,4 +1014,55 @@ footer img {
     flex-wrap: wrap;
     max-width: 1000px;
     margin: auto;
+}
+
+/* ACCORDEÓN */
+
+.life2 {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 768px) {
+    .life2 {
+        text-align: justify;
+    }
+}
+
+.accordion-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.accordion {
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* Espacio entre acordeones */
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+.arrow-icon {
+    transition: transform 0.3s ease;
+}
+
+.accordion.active .accordion-content {
+    display: block;
+}
+
+.accordion.active .arrow-icon {
+    transform: rotate(180deg);
 }
