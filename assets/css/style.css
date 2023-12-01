@@ -1018,6 +1018,12 @@ footer img {
         width: 90%;
         /* Las tarjetas ocupan más ancho en pantallas pequeñas */
     }
+
+    .post-content {
+        width: 100%;
+        margin: 10px;
+        margin-top: 100px;
+    }
 }
 
 /*CONTENIDO POSTS*/
