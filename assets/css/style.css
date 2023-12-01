@@ -414,42 +414,6 @@ input[type=checkbox] {
     text-align: center;
 }
 
-.juicy {
-    position: relative;
-    /* Necesario para posicionar el pseudo-elemento */
-    padding-bottom: 15px;
-    /* Ajusta la separación entre el texto y la línea */
-}
-
-.juicy::after {
-    content: '';
-    /* Importante para que el pseudo-elemento se genere */
-    display: block;
-    /* Hace que el pseudo-elemento sea como un div */
-    margin: 0 auto;
-    /* Esto centrará la línea si no tiene un ancho establecido al 100% */
-    height: 2px;
-    /* El grosor de tu línea */
-    width: 100px;
-    /* El ancho de la línea respecto al elemento .h2coach */
-    background-color: #333;
-    /* El color de tu línea */
-    position: absolute;
-    /* Posicionamiento absoluto respecto al elemento .h2coach */
-    bottom: 0;
-    /* Alineado en la parte inferior del elemento .h2coach */
-    left: 0;
-    /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
-    right: 0;
-    /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
-}
-
-/* display: flex;
-    flex-direction: column;
-    max-width: 1000px;
-    margin: auto;
-    padding: 30px; */
-
 .cards-container {
     display: flex;
     justify-content: center;
@@ -654,14 +618,14 @@ h3 {
     }
 }
 
-.h2myjourney {
+.linea {
     position: relative;
     /* Necesario para posicionar el pseudo-elemento */
     padding-bottom: 15px;
     /* Ajusta la separación entre el texto y la línea */
 }
 
-.h2myjourney::after {
+.linea::after {
     content: '';
     /* Importante para que el pseudo-elemento se genere */
     display: block;
@@ -704,36 +668,6 @@ h3 {
 }
 
 .h2coach::after {
-    content: '';
-    /* Importante para que el pseudo-elemento se genere */
-    display: block;
-    /* Hace que el pseudo-elemento sea como un div */
-    margin: 0 auto;
-    /* Esto centrará la línea si no tiene un ancho establecido al 100% */
-    height: 2px;
-    /* El grosor de tu línea */
-    width: 100px;
-    /* El ancho de la línea respecto al elemento .h2coach */
-    background-color: #333;
-    /* El color de tu línea */
-    position: absolute;
-    /* Posicionamiento absoluto respecto al elemento .h2coach */
-    bottom: 0;
-    /* Alineado en la parte inferior del elemento .h2coach */
-    left: 0;
-    /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
-    right: 0;
-    /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
-}
-
-.efic {
-    position: relative;
-    /* Necesario para posicionar el pseudo-elemento */
-    padding-bottom: 15px;
-    /* Ajusta la separación entre el texto y la línea */
-}
-
-.efic::after {
     content: '';
     /* Importante para que el pseudo-elemento se genere */
     display: block;
@@ -926,7 +860,7 @@ footer img {
 
 .accordion-container {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 25px auto;
 }
 
 .accordion {
@@ -963,6 +897,10 @@ footer img {
 
 .accordion.active .arrow-icon {
     transform: rotate(180deg);
+}
+
+.benefits {
+    text-align: start;
 }
 
 /* Estilos para el menú de categorías BLOG BLOG BLOG BLOG --------------------------------------*/
