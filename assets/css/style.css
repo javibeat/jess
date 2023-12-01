@@ -154,11 +154,8 @@ input[type=checkbox] {
 .section2 {
     display: flex;
     flex-direction: column;
-    /* Elementos secundarios en una fila para la versión de escritorio */
     justify-content: center;
-    /* Centra los elementos horizontalmente */
     align-items: center;
-    /* Centra los elementos verticalmente */
     padding: 100px 40px 100px 40px;
 }
 
@@ -447,7 +444,7 @@ input[type=checkbox] {
 }
 
 @media (max-width: 768px) {
-    .me {
+    .section2 {
         flex-direction: column;
         /* Elementos secundarios en una columna para la versión móvil */
     }
