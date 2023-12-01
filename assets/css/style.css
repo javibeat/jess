@@ -1025,6 +1025,7 @@ footer img {
 .post-content {
     display: flex;
     flex-direction: column;
+    width: 500px;
     justify-content: center;
     margin: auto;
 }
