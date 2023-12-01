@@ -335,7 +335,6 @@ input[type=checkbox] {
 .intro2 {
     max-width: 800px;
     text-align: justify;
-    padding: 30px;
     max-width: 1000px;
     margin: auto;
 }
@@ -623,6 +622,7 @@ h3 {
     /* Necesario para posicionar el pseudo-elemento */
     padding-bottom: 15px;
     /* Ajusta la separación entre el texto y la línea */
+    margin-bottom: 50px;
 }
 
 .linea::after {
@@ -902,6 +902,45 @@ footer img {
 .benefits {
     text-align: start;
 }
+
+.br {
+    margin-bottom: 15px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px; /* o el ancho máximo que prefieras */
+    margin-bottom: 40px;
+}
+
+.stat {
+    text-align: center;
+    max-width: 200px;
+}
+
+.number {
+    font-size: 3em; /* o el tamaño que prefieras */
+    font-weight: 500;
+    color: #ff2c2c;
+}
+
+.label {
+    font-size: 16px; /* o el tamaño que prefieras */
+    margin-top: 0.5em;
+}
+
+@media (max-width: 600px) {
+    .stats-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stat {margin: 30px;}
+}
+
 
 /* Estilos para el menú de categorías BLOG BLOG BLOG BLOG --------------------------------------*/
 .category-menu {
