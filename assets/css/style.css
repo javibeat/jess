@@ -1034,11 +1034,7 @@ footer img {
     }
 
     .accordion-header span, .accordion-content p {
-        font-size: 14px; /* Ajusta el tamaño del texto para dispositivos móviles si es necesario */
-    }
-
-    .accordion p {
-        font-size: 16px;
+        font-size: 16px; /* Ajusta el tamaño del texto para dispositivos móviles si es necesario */
     }
     
 }
