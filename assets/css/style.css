@@ -356,14 +356,13 @@ input[type=checkbox] {
 }
 
 .meright {
-    margin: 25px;
+    margin: 20px;
     text-align: justify;
 }
 
 @media (max-width: 768px) {
     .section2 {
         flex-direction: column;
-        /* Elementos secundarios en una columna para la versión móvil */
     }
 
     .meright {
