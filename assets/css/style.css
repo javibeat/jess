@@ -1020,4 +1020,11 @@ footer img {
     }
 }
 
+/*CONTENIDO POSTS*/
+
+.post-content {
+    display: flex;
+    flex-direction: column;
+}
+
 /*FIN BLOG-----------------------------------------------------------*/
