@@ -142,6 +142,26 @@ input[type=checkbox] {
     padding: 100px 40px 100px 40px;
 }
 
+.section1 {
+    background-color: rgb(239, 239, 239);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 40px 100px 40px;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    /* Elementos secundarios en una fila para la versión de escritorio */
+    justify-content: center;
+    /* Centra los elementos horizontalmente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    padding: 100px 40px 100px 40px;
+}
+
 /* Section Styles */
 .main-section {
     display: flex;
@@ -393,15 +413,6 @@ input[type=checkbox] {
     }
 }
 
-.intro {
-    background-color: rgb(239, 239, 239);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 150px 50px 150px 50px;
-}
-
 .intro2 {
     max-width: 800px;
     text-align: justify;
@@ -410,18 +421,7 @@ input[type=checkbox] {
     margin: auto;
 }
 
-@media (max-width: 768px) {}
 
-.me {
-    display: flex;
-    flex-direction: column;
-    /* Elementos secundarios en una fila para la versión de escritorio */
-    justify-content: center;
-    /* Centra los elementos horizontalmente */
-    align-items: center;
-    /* Centra los elementos verticalmente */
-    padding: 150px 30px 150px 30px;
-}
 
 .medivs {
     flex: 1;
@@ -495,11 +495,6 @@ input[type=checkbox] {
 
 .mcentro {
     text-align: center;
-}
-
-.work {
-    background-color: rgb(239, 239, 239);
-    padding: 150px 30px 150px 30px;
 }
 
 .juicy {
@@ -638,11 +633,6 @@ h3 {
     font-weight: 500;
 }
 
-.meet {
-    background-color: rgb(239, 239, 239);
-    padding: 150px 50px 150px 50px;
-}
-
 .meetbox {
     display: flex;
     flex-direction: row;
@@ -747,14 +737,6 @@ h3 {
     }
 }
 
-.myjourney {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 150px 50px 150px 50px;
-}
-
 .h2myjourney {
     position: relative;
     /* Necesario para posicionar el pseudo-elemento */
@@ -825,14 +807,6 @@ h3 {
     /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
     right: 0;
     /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
-}
-
-.logos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 150px 50px 150px 50px;
 }
 
 .efic {
@@ -986,7 +960,6 @@ footer img {
     flex-wrap: wrap;
     max-width: 1000px;
     margin: auto;
-    padding: 150px 50px 150px 50px;
 }
 
 .h3class {
@@ -1001,11 +974,6 @@ footer img {
     text-align: center;
     margin: auto;
     margin-top: 30px;
-}
-
-.meet2 {
-    background-color: rgb(239, 239, 239);
-    padding: 150px 50px 150px 50px;
 }
 
 .meet2texto {
