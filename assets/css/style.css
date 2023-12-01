@@ -341,8 +341,6 @@ input[type=checkbox] {
 }
 
 .medivs {
-    flex: 1;
-    /* Los divs tomarán el mismo espacio */
     display: flex;
     flex-direction: row;
     justify-content: center;
