@@ -25,3 +25,22 @@ document.querySelectorAll('.accordion-header').forEach(header => {
         }
     });
 });
+
+
+window.addEventListener('scroll', function() {
+    var progress = document.querySelector('.scroll-progress');
+    var containerRect = document.querySelector('.scroll-container').getBoundingClientRect();
+    var containerTop = containerRect.top;
+    var containerHeight = containerRect.height;
+  
+    // La línea roja solo aparecerá y se llenará cuando la sección esté en la vista
+    if(containerTop < window.innerHeight && containerTop >= 0) {
+      var percentage = (window.innerHeight - containerTop) / window.innerHeight;
+      progress.style.height = `${percentage * 100}%`;
+    } else if (containerTop < 0) {
+      progress.style.height = '100%';
+    } else {
+      progress.style.height = '0%';
+    }
+  });
+  
