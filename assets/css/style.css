@@ -339,36 +339,8 @@ input[type=checkbox] {
     margin: auto;
 }
 
-.medivs {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* Centra el contenido horizontalmente */
-    align-items: center;
-    /* Centra el contenido verticalmente */
-    max-width: 1000px;
-    margin: auto;
-}
-
-.meleft {
-    margin: 10px;
-}
-
-.meright {
-    margin: 20px;
-    text-align: justify;
-}
-
 @media (max-width: 768px) {
     .section2 {
-        flex-direction: column;
-    }
-
-    .meright {
-        font-size: 16px;
-    }
-
-    .medivs {
         flex-direction: column;
     }
 }
@@ -410,6 +382,9 @@ input[type=checkbox] {
 }
 
 .mcentro {
+    display: flex;
+    justify-content: center;
+    margin: auto;
     text-align: center;
 }
 
