@@ -166,7 +166,7 @@ input[type=checkbox] {
     /* Alineación horizontal para pantallas grandes */
     justify-content: center;
     align-items: center;
-    background-image: url('assets/images/jess.jpg') center center / cover no-repeat;
+    background: url('/assets/images/jess.jpg') center center / cover no-repeat;
     /* Se mantiene */
     height: 100vh;
     /* Se mantiene */
@@ -687,7 +687,6 @@ h3 {
     left: 0;
     /* Alineado a la izquierda. Cambia esto para ajustar la posición horizontal */
     right: 0;
-    /* Alineado a la derecha. Esto junto con 'left: 0' y 'margin: 0 auto' asegura que esté centrado */
 }
 
 .card1 {
@@ -778,11 +777,9 @@ footer img {
 .mainsection {
     display: flex;
     flex-direction: column;
-    /* Alineación horizontal para pantallas grandes */
+    background: url('/assets/images/jess.jpg') center center / cover no-repeat;
     justify-content: center;
     align-items: center;
-    background-image: url('assets/images/jess.jpg') center center / cover no-repeat;
-    /* Se mantiene */
     height: 400px;
 }
 
