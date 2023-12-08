@@ -44,3 +44,21 @@ window.addEventListener('scroll', function() {
     }
   });
   
+  document.addEventListener('DOMContentLoaded', (event) => {
+    // Obtener el botón y el menú desplegable
+    var dropbtn = document.querySelector('.dropbtn');
+    var dropdown = document.querySelector('.dropdown');
+
+    // Añadir evento click al botón
+    dropbtn.addEventListener('click', function() {
+        // Mostrar u ocultar el menú desplegable
+        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Cerrar el menú desplegable si se hace clic fuera de él
+    window.addEventListener('click', function(e) {
+        if (!dropbtn.contains(e.target)) {
+            dropdown.style.display = 'none';
+        }
+    });
+});
