@@ -166,7 +166,7 @@ input[type=checkbox] {
     /* Alineación horizontal para pantallas grandes */
     justify-content: center;
     align-items: center;
-    background: url('{{ site.url }}/assets/images/jess.jpg') center center / cover no-repeat;
+    background: url('{{ site.baseurl }}/assets/images/jess.jpg') center center / cover no-repeat;
     /* Se mantiene */
     height: 100vh;
     /* Se mantiene */
@@ -192,6 +192,12 @@ input[type=checkbox] {
     /* Se mantiene */
 
 }
+
+/*--------TEST--------*/
+
+
+
+/*--------TEST--------*/
 
 .left-div {
     background-color: #ffffff;
