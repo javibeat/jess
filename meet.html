@@ -7,28 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Montserrat Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>MEET YOUR COACH</title>
 
     <!-- Primary Meta Tags -->
     <meta name="title" content="Expat & Career Coach - From surviving to thriving abroad">
-    <meta name="description" content="Helping expats to shape their experience living abroad, designing their best life and building a fulfilling career in a foreign country">
+    <meta name="description"
+        content="Helping expats to shape their experience living abroad, designing their best life and building a fulfilling career in a foreign country">
     <meta name="keywords" content="Expat coach, career coach, living abroad, coach in Dubai, Dubai, Coaching, Expat">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="jessicamorari.com">
     <meta property="og:title" content="Expat & Career Coach - From surviving to thriving abroad">
-    <meta property="og:description" content="Helping expats to shape their experience living abroad, designing their best life and building a fulfilling career in a foreign country">
+    <meta property="og:description"
+        content="Helping expats to shape their experience living abroad, designing their best life and building a fulfilling career in a foreign country">
     <meta property="og:image" content="assets/images/logo.webp">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="jessicamorari.com">
     <meta property="twitter:title" content="Expat & Career Coach - From surviving to thriving abroad">
-    <meta property="twitter:description" content="Helping expats to shape their experience living abroad, designing their best life and building a fulfilling career in a foreign country">
+    <meta property="twitter:description"
+        content="Helping expats to shape their experience living abroad, designing their best life and building a fulfilling career in a foreign country">
     <meta property="twitter:image" content="assets/images/logo.webp">
 
     <!-- Favicon -->
@@ -43,78 +47,79 @@
 <body>
 
     <header>
-        <nav class="navbar">
-
-            <div><a href="index.html"><img class="logo" src="assets/images/logo.png"></a></div>
-
-            <!-- NAVIGATION MENU -->
-            <ul class="nav-links">
-                <!-- USING CHECKBOX HACK -->
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
-                <!-- NAVIGATION MENUS -->
-                <div class="menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="#">MEET YOUR COACH</a></li>
-                    <li><a href="coaching.html">COACHING</a></li>
-                    <li><a href="free.html">FREE RESOURCES</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </div>
-            </ul>
-        </nav>
+        <div id="navbar"></div>
     </header>
+    <script>
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
+
 
     <section class="section1">
 
-        <div class="meetbox">
-            <div class="leftmeet">
-                <img class="imgmeet" src="assets/images/meet.jpg" alt="Descripción de la imagen">
+        <div class="subSection">
+
+            <div class="centre3">
+
+                <div class="left3"><img class="pic" src="assets/images/meet.jpg" alt=""></div>
+
+                <div class="right3">
+
+                    <h2 class="linea">MEET YOUR COACH</h2>
+
+                    <p>My name is Jessica Morari and I am a certified Life & Career Coach, specialized in Expats.
+                        In a nutshell, I help those living outside their home country shape their experience abroad and
+                        make the most of it, both personally and professionally.</p>
+
+                </div>
+
             </div>
 
-            <div class="rightmeet">
-                <h1 class="h1meet">MEET YOUR COACH</h1>
-                <br>
-                <P>Hello, I am Jessica!</P>
-                <br>
-                <p>I am a certified Life & Career Coach, specialized in Expats.</p>
-                <p>In a nutshell, I help those living outside their home country shape their experience abroad and make
-                    the
-                    most of it, both personally and professionally.</p>
-                <br>
-            </div>
         </div>
+    </section>
+
     </section>
 
     <section class="section2">
 
         <h2 class="linea">MY JOURNEY</h2>
 
-        <div class="centrejourney">
-            <p>You might be wondering how I ended up here.</p>
-            <br>
-            <p>Originally from Milan, I moved to Spain in 2015 to pursue my career as a Hotel Manager.</p>
-            <p>I found myself thousands of km aways from my family and lifelong friends, working 70+ hours per week and
-                living a long-distance relationship.</p>
-            <p>I felt that I was surviving instead of living my life as if I meant it.</p>
-            <p>I knew I had to do something.</p>
-            <p>Out of desperation, I attended a coaching session.</p>
-            <p>I honestly didn't even really knew what coaching was back then. But from that moment everything changed.
-            </p>
-            <br>
-            <p>After experiencing the power of coaching myself, I couldn't help but getting trained to bring the same
-                change to other people around me. </p>
-            <br>
-            <p>Since then, I have been on the go around the world designing the life and the career that I have always
-                dreamt about.</p>
-            <p>And here I am to help you do the same: go from surviving to thriving, in life and work living abroad.</p>
-            <br>
-            <p>Wondering if we might be the perfect match to work on your life and/or career?</p>
-        </div>
+        <div class="subSection">
 
-        <div class="mcentro">
-            <div class="formulario2"><a href="contact.html">BOOK HERE A FREE EXPLORATORY SESSION</a></div>
+            <div class="text">
+                <p>You might be wondering how I ended up here.</p>
+                <br>
+                <p>Originally from Milan, I moved to Spain in 2015 to pursue my career as a Hotel Manager.</p>
+                <p>I found myself thousands of km aways from my family and lifelong friends, working 70+ hours per week
+                    and
+                    living a long-distance relationship.</p>
+                <p>I felt that I was surviving instead of living my life as if I meant it.</p>
+                <p>I knew I had to do something.</p>
+                <p>Out of desperation, I attended a coaching session.</p>
+                <p>I honestly didn't even really knew what coaching was back then. But from that moment everything
+                    changed.
+                </p>
+                <br>
+                <p>After experiencing the power of coaching myself, I couldn't help but getting trained to bring the
+                    same
+                    change to other people around me. </p>
+                <br>
+                <p>Since then, I have been on the go around the world designing the life and the career that I have
+                    always
+                    dreamt about.</p>
+                <p>And here I am to help you do the same: go from surviving to thriving, in life and work living abroad.
+                </p>
+                <br>
+                <p>Wondering if we might be the perfect match to work on your life and/or career?</p>
+            </div>
+
+            <div class="botonC">
+                <div class="boton2"><a href="contact.html">BOOK HERE A FREE EXPLORATORY SESSION</a></div>
+            </div>
+
         </div>
 
     </section>
@@ -137,7 +142,8 @@
 
                 <div class="texto">
                     <p>Despite running a one-woman show, I can always count on my beloved assistant.
-                    My 16-year-old pinscher, Toffee, is THE best collaborator I could ever have. She's always in for food, cuddles and emotional support.</p>
+                        My 16-year-old pinscher, Toffee, is THE best collaborator I could ever have. She's always in for
+                        food, cuddles and emotional support.</p>
                 </div>
 
             </div>
@@ -145,7 +151,8 @@
 
                 <div class="texto">
                     <p>I don't drink coffee.</p>
-                    <p>I know, Italy might revoque my nationality at some point, but I really can't stand the flavor nor the smell.</p>
+                    <p>I know, Italy might revoque my nationality at some point, but I really can't stand the flavor nor
+                        the smell.</p>
                     <p>I am a tea lady [and yes, I sip it raising my pinky finger].</p>
                     <p>I am a big fan of Yogi Tea!</p>
                 </div>
@@ -173,8 +180,8 @@
 
     <footer>
         <img src="assets/images/dots.png" alt="3dots">
-        <p>Jessica Morari | Expat & Career Coach
-        <p></p> &copy; 2023 All rights reserved.</p>
+        <p>Jessica Morari | Expat & Career Coach</p>
+        <p> &copy; 2023 All rights reserved.</p>
     </footer>
 
 </body>

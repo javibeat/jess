@@ -1,5 +1,8 @@
 ---
+layout: default
+title: BLOG
 ---
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,28 +12,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Montserrat Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>BLOG</title>
 
     <!-- Primary Meta Tags -->
     <meta name="title" content="Expat & Career Coach - From surviving to thriving abroad">
-    <meta name="description" content="Helping expats to shape their experience living abroad, designing their best life and building a fulfilling career in a foreign country">
+    <meta name="description"
+        content="Helping expats to shape their experience living abroad, designing their best life and building a fulfilling career in a foreign country">
     <meta name="keywords" content="Expat coach, career coach, living abroad, coach in Dubai, Dubai, Coaching, Expat">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="jessicamorari.com">
     <meta property="og:title" content="Expat & Career Coach - From surviving to thriving abroad">
-    <meta property="og:description" content="Helping expats to shape their experience living abroad, designing their best life and building a fulfilling career in a foreign country">
+    <meta property="og:description"
+        content="Helping expats to shape their experience living abroad, designing their best life and building a fulfilling career in a foreign country">
     <meta property="og:image" content="assets/images/logo.webp">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="jessicamorari.com">
     <meta property="twitter:title" content="Expat & Career Coach - From surviving to thriving abroad">
-    <meta property="twitter:description" content="Helping expats to shape their experience living abroad, designing their best life and building a fulfilling career in a foreign country">
+    <meta property="twitter:description"
+        content="Helping expats to shape their experience living abroad, designing their best life and building a fulfilling career in a foreign country">
     <meta property="twitter:image" content="assets/images/logo.webp">
 
     <!-- Favicon -->
@@ -44,54 +51,38 @@
 
 <body>
 
-    <header>
-        <nav class="navbar">
+        <header>
+            {% include menu.html %}
+        </header>
 
-            <div><a href="index.html"><img class="logo" src="assets/images/logo.png"></a></div>
+    <div class="section1">
+        <h1>BLOG</h1>
+    </div>
 
-            <!-- NAVIGATION MENU -->
-            <ul class="nav-links">
+    <div class="section2">
 
-                <!-- USING CHECKBOX HACK -->
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="category-menu">
+            <button class="category-button" onclick="filterPosts('all')">ALL</button>
+            <button class="category-button" onclick="filterPosts('lifecoaching')">LIFE COACHING</button>
+            <button class="category-button" onclick="filterPosts('career')">CAREER</button>
+            <button class="category-button" onclick="filterPosts('expat')">EXPAT</button>
+            <!-- ... más botones de categoría según sea necesario ... -->
+        </div>
 
-                <!-- NAVIGATION MENUS -->
-
-                <div class="menu">
-                    <a href="index.html">HOME</a>
-                    <li><a href="meet.html">MEET YOUR COACH</a></li>
-                    <li><a href="coaching.html">COACHING</a></li>
-                    <li><a href="free.html">FREE RESOURCES</a></li>
-                    <li><a href="#">BLOG</a></li>
-                    <a href="contact.html">CONTACT</a>
-                </div>
-            </ul>
-
-        </nav>
-    </header>
-
-    <div class="category-menu">
-        <button class="category-button" onclick="filterPosts('all')">ALL</button>
-        <button class="category-button" onclick="filterPosts('lifecoaching')">LIFE COACHING</button>
-        <button class="category-button" onclick="filterPosts('career')">CAREER</button>
-        <button class="category-button" onclick="filterPosts('expat')">EXPAT</button>
-        <!-- ... más botones de categoría según sea necesario ... -->
     </div>
 
     <!-- Posts Container -->
+
+    <div class="section1">
     <div class="posts-container">
         {% for post in site.posts %}
-        <a href="{{ post.url | prepend: site.baseurl }}" class="post-card all {{ post.categories | first }}"
-            style="text-decoration: none;">
-            {% if post.image %}
-            <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}">
-            {% endif %}
-            <h3>{{ post.title }}</h3>
-            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-card {{ post.categories | first }}" style="text-decoration: none;">
+            <!-- Resto del contenido del post -->
         </a>
         {% endfor %}
     </div>
+</div>
+
 
     <script src="assets/js/script.js"></script>
 

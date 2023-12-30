@@ -9,7 +9,7 @@
     <!-- Montserrat Font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>LIVING ABROAD</title>
 
@@ -48,81 +48,78 @@
 <body>
 
     <header>
-        <nav class="navbar">
-
-            <div><a href="index.html"><img class="logo" src="assets/images/logo.png"></a></div>
-
-            <!-- NAVIGATION MENU -->
-            <ul class="nav-links">
-                <!-- USING CHECKBOX HACK -->
-                <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-
-                <!-- NAVIGATION MENUS -->
-                <div class="menu">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="meet.html">MEET YOUR COACH</a></li>
-                    <li><a href="coaching.html">COACHING</a></li>
-                    <li><a href="free.html">FREE RESOURCES</a></li>
-                    <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
-                </div>
-            </ul>
-        </nav>
+        <div id="navbar"></div>
     </header>
+    <script>
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
 
     <section class="mainsection">
 
-        <h1 class="abroad">THRIVING ABROAD</h1>
-        <h2 class="abroadh2">Stop surviving and start thriving and living life as if you meant it</h2>
-        <div class="mcentro-top">
-            <div class="formulario2"><a href="contact.html">I DESERVE TO THRIVE</a></div>
+        <h1 class="title">THRIVING ABROAD</h1>
+        <h2 class="title2">Stop surviving and start thriving and living life as if you meant it</h2>
+        <div class="botonC">
+            <div class="boton2"><a href="contact.html">I DESERVE TO THRIVE</a></div>
+        </div>
+
+    </section>
+
+    <section class="section1">
+
+        <h2 class="linea">IS LIFE HAPPENING TO YOU?</h2>
+
+        <div class="subSection">
+
+            <div class="text">
+
+                <p class="br">- You feel like you were meant for more and better</p>
+                <p class="br">- You feel alone and disconnected from the people around you</p>
+                <p class="br">- You struggle to organize your life and create routines that support your physical,
+                    mental
+                    and emotional
+                    wellbeing</p>
+                <p class="br">- You lack energy, motivation and purpose</p>
+                <p class="br">- You feel lost and don't know where to start</p>
+                <p class="br">If any of these resonate with you, it might be worth it having a chat...</p>
+                <p class="br">I feel you. I have been there myself.</p>
+                <p>There was a time when I felt that I was going through life without really living it. Until the point
+                    where I
+                    thought about giving it all up and stop chasing my dreams.</p>
+                <p class="br">Through coaching, lots of questions and actions, I was finally able to revolution my life
+                    and
+                    create my
+                    best
+                    reality in every aspect.</p>
+                <p class="br">Since then, I have been on the go around the world designing the life and the career that
+                    I
+                    have always
+                    dreamt about.</p>
+                <p class="br">Today with "Thriving Abroad", I help expats who are willing to STOP to giving up on life
+                    and
+                    say YES to
+                    the
+                    life and career of their dreams.</p>
+                <div class="botonC">
+                    <div class="boton2"><a href="contact.html">MEET YOUR COACH</a></div>
+                </div>
+
+            </div>
+
+        </div>
+
         </div>
 
     </section>
 
     <section class="section2">
 
-        <div class="life">
-
-            <h2 class="linea">IS LIFE HAPPENING TO YOU?</h2>
-
-            <p class="br">- You feel like you were meant for more and better</p>
-            <p class="br">- You feel alone and disconnected from the people around you</p>
-            <p class="br">- You struggle to organize your life and create routines that support your physical, mental
-                and emotional
-                wellbeing</p>
-            <p class="br">- You lack energy, motivation and purpose</p>
-            <p class="br">- You feel lost and don't know where to start</p>
-            <p class="br">If any of these resonate with you, it might be worth it having a chat...</p>
-            <p class="br">I feel you. I have been there myself.</p>
-            <p>There was a time when I felt that I was going through life without really living it. Until the point
-                where I
-                thought about giving it all up and stop chasing my dreams.</p>
-            <p class="br">Through coaching, lots of questions and actions, I was finally able to revolution my life and
-                create my
-                best
-                reality in every aspect.</p>
-            <p class="br">Since then, I have been on the go around the world designing the life and the career that I
-                have always
-                dreamt about.</p>
-            <p class="br">Today with "Thriving Abroad", I help expats who are willing to STOP to giving up on life and
-                say YES to
-                the
-                life and career of their dreams.</p>
-            <div class="mcentro">
-                <div class="formulario2"><a href="contact.html">MEET YOUR COACH</a></div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="seccion">
-
         <h2 class="linea">THRIVING ABROAD PROGRAM</h2>
 
-        <p class="life2">That's why I designed "Thriving Abroad", a 12-week journey based on 6 pillars that are the key
+        <p class="text">That's why I designed "Thriving Abroad", a 12-week journey based on 6 pillars that are the key
             to get that more and better that we all dream of.
             Let me walk you through the program.</p>
 
@@ -192,17 +189,19 @@
             <!-- Repetir para los otros 5 acordeones -->
         </div>
 
-        <div class="mcentro">
-            <div class="formulario2"><a href="contact.html">THIS IS WHAT I NEED</a></div>
+        <div class="botonC">
+            <div class="boton2"><a href="contact.html">THIS IS WHAT I NEED</a></div>
         </div>
 
     </section>
 
-    <section class="section2">
+    <section class="section1">
 
         <h2 class="linea">WHAT WILL YOU GET THROUGH "THRIVING ABROAD"</h2>
 
-        <div class="benefits">
+        <div class="subSection">
+
+        <div class="text">
             <p class="br">- You will be able to design your best life and career to finally live how you deserve</p>
             <p class="br">- You will feel empowered and in control of what is going on in your life</p>
             <p class="br">- You will increase your level of self-esteem and self-confidence</p>
@@ -216,9 +215,11 @@
             </p>
         </div>
 
+    </div>
+
     </section>
 
-    <section class="section1">
+    <section class="section2">
 
         <h2 class="linea">WHAT IS INCLUDED IN THE PROGRAM?</h2>
 
@@ -241,16 +242,19 @@
             </div>
         </div>
 
-        <div class="mcentro">
-            <div class="formulario2"><a href="contact.html">I WANT IN RIGHT NOW</a></div>
+        <div class="botonC">
+            <div class="boton2"><a href="contact.html">I WANT IN RIGHT NOW</a></div>
         </div>
 
     </section>
 
-    <section class="section2">
+    <section class="section1">
+
         <h2 class="linea">THRIVING ABROAD IS NOT FOR YOU IF...</h2>
 
-        <div class="benefits">
+        <div class="subSection">
+
+        <div class="text">
             <p class="br">- You are looking for shortcuts</p>
             <p class="br">- You are OK with life happening to you</p>
             <p class="br">- You are already living your best life abroad</p>
@@ -260,12 +264,15 @@
                 you don't need anymore</p>
             <p class="br">- You already feel completely satisfied fulfilled and energized</p>
             <br>
-            <p class="br">Do you prefer having a live chat with me to check if "Thriving Abroad" is what you really need? Let's jump on a call, it's on me!</p>
+            <p class="br">Do you prefer having a live chat with me to check if "Thriving Abroad" is what you really
+                need? Let's jump on a call, it's on me!</p>
         </div>
 
-        <div class="mcentro">
-            <div class="formulario2"><a href="contact.html">I WANT TO KNOW MORE ABOUT "THRIVING ABROAD"</a></div>
+        <div class="botonC">
+            <div class="boton2"><a href="contact.html">I WANT TO KNOW MORE ABOUT "THRIVING ABROAD"</a></div>
         </div>
+
+    </div>
 
     </section>
 
